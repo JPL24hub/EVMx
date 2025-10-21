@@ -1,7 +1,6 @@
 # 🧩 EVMx: An FPGA-Based Accelerator for Smart Contract Processing
 
 [![License](https://img.shields.io/badge/License-Apache--2.0-green.svg)](LICENSE)
-[![Build](https://github.com/joelponcha/evmx/actions/workflows/sim.yml/badge.svg)](https://github.com/joelponcha/evmx/actions/workflows/sim.yml)
 [![Documentation](https://img.shields.io/badge/docs-latest-blue.svg)](https://joelponcha.github.io/evmx)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1234567.svg)](https://doi.org/10.5281/zenodo.1234567)
 
