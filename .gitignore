@@ -1,0 +1,21 @@
+# Vivado
+*.jou
+*.log
+*.str
+*.rpt
+*.dcp
+*.wdb
+*.html
+*.xml
+*.cache/
+*.runs/
+*.sim/
+*.srcs/
+.Xil/
+*.ip_user_files/
+# Waves/coverage
+*.wcfg
+coverage/
+# Bitstreams and large artifacts (use LFS)
+*.bit
+*.bin
