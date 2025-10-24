@@ -4,8 +4,8 @@
 -- REVISION:    1.0 - 21/06/2024 - File created. 
 --              1.1 - 28/05/2025 - Added Booth Multiplier.
 --              1.2 - 30/05/2025 - Reduced number of inputs to match ZCU104
--- DESCRIPTION: Booth Multiplier implementation. It handles A=1, B=1, A=0, B=0, A=1, B=0, A=0, B=1.
--- COMMENTS: Working as expected. I need to add division by 2^x
+-- DESCRIPTION: 
+-- COMMENTS: Working as expected.
 --------------------------------------------------------------------------------------
 
 library IEEE;
