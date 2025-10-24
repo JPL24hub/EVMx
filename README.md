@@ -26,6 +26,7 @@ The architecture:
 
 The repository follows a modular organization to promote readability, maintainability, and independent verification of each hardware component.
 
+```text
 📦 EVMx/
 ├── docs/                # Documentation, figures, schematics, and reference papers
 ├── rtl/                 # VHDL source code (Register Transfer Level design)
