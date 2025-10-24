@@ -1,0 +1,50 @@
+----------------------------------------------------------------------
+-- FILE:        COUNTER_NEW.vhd
+-- ENGINEER:    Poncha Lemayian
+-- REVISION:    1.0 - 19/01/2025- File created.
+-- DESCRIPTION: Conter with reset, increment, decrement and load.
+-- COMMENTS:    
+--------------------------------------------------------------------------------------
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+-- Entity
+entity COUNTER_NEW is
+    generic(WIDTH_CNTR : integer := 5);
+    port(
+        clk         : in std_logic;
+        rst         : in std_logic;
+        sel_cntr    : in std_logic_vector(1 downto 0);
+        data_in     : in std_logic_vector(WIDTH_CNTR - 1 downto 0);
+        data_out    : out std_logic_vector(WIDTH_CNTR - 1 downto 0)
+    );
+end entity;
+
+-- Architecture
+architecture rtl of COUNTER_NEW is
+    signal counter_next, counter, diff : unsigned(WIDTH_CNTR - 1 downto 0);
+begin
+    process(clk) is
+    begin
+        if rising_edge(clk) then
+            if rst = '0' then
+                counter <= (others=>'0');
+            else
+                counter <= counter_next;
+            end if;
+        end if;
+    end process;
+
+    -- Next state
+    with sel_cntr select
+    counter_next <= counter when "00",
+                counter + 1 when "01",
+                (others=>'0') when "10",
+                unsigned(data_in) when others;
+
+    -- Output
+    data_out <= std_logic_vector(counter);
+
+end architecture;

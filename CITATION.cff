@@ -1,56 +1,7 @@
-# CITATION.cff
-cff-version: 1.2.0
-message: "If you use EVMx or reference this work, please cite it as follows:"
-title: "EVMx: An FPGA-Based Accelerator for Smart Contract Processing"
-authors:
-  - family-names: "Lemayian"
-    given-names: "Joel Poncha"
-    affiliation: "Department of Electrical Engineering, École de technologie supérieure (ÉTS), Montréal, Canada"
-    orcid: "https://orcid.org/0000-0002-1234-5678"   # optional, replace with your real ORCID if available
-  - family-names: "Gagnon"
-    given-names: "Ghyslain"
-    affiliation: "Department of Electrical Engineering, École de technologie supérieure (ÉTS), Montréal, Canada"
-  - family-names: "Zhang"
-    given-names: "Kaiwen"
-    affiliation: "Department of Software Engineering and IT, École de technologie supérieure (ÉTS), Montréal, Canada"
-  - family-names: "Giard"
-    given-names: "Pascal"
-    affiliation: "Department of Electrical Engineering, École de technologie supérieure (ÉTS), Montréal, Canada"
-version: "1.0.0"
-date-released: "2025-10-21"
-repository-code: "https://github.com/JPL24hub/EVMx"
-license: "Apache-2.0"
-keywords:
-  - "FPGA"
-  - "Ethereum"
-  - "EVM"
-  - "Blockchain"
-  - "Smart Contracts"
-  - "Hardware Acceleration"
-  - "VHDL"
-abstract: >
-  EVMx is an FPGA-based Ethereum Virtual Machine (EVM) accelerator designed to
-  offload and parallelize smart contract execution. The architecture preserves
-  the stack-based model of the EVM and achieves improved area efficiency,
-  reduced latency, and high throughput on Xilinx Zynq UltraScale+ devices.
-  This repository contains synthesizable VHDL source files, testbenches,
-  simulation scripts, and documentation for reproducible FPGA implementation
-  and evaluation.
-contact:
-  - name: "Joel Poncha Lemayian"
-    email: "joelponcha24@gmail.com"
-preferred-citation:
-  type: article
-  title: "EVMx: An FPGA-Based Accelerator for Smart Contract Processing"
-  authors:
-    - family-names: "Lemayian"
-      given-names: "Joel Poncha"
-    - family-names: "Gagnon"
-      given-names: "Ghyslain"
-    - family-names: "Zhang"
-      given-names: "Kaiwen"
-    - family-names: "Giard"
-      given-names: "Pascal"
-  journal: "IEEE Transactions on Very Large Scale Integration (VLSI) Systems"
-  year: 2025
-  doi: "10.1109/TVLSI.2025.XXXXXXX"   # replace with actual DOI once assigned
+@online{EVMx_repo,
+  author       = {Lemayian, Joel Poncha and Gagnon, Ghyslain and Zhang, Kaiwen and Giard, Pascal},
+  title        = {{EVMx}: An {FPGA}-Based Accelerator for Smart Contract Processing},
+  year         = {2025},
+  url          = {https://github.com/JPL24hub/EVMx},
+  note         = {Accessed: Oct. 24, 2025}
+}

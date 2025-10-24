@@ -2,7 +2,7 @@
 -- FILE:        FSM_EXPO.vhd
 -- ENGINEER:    Poncha Lemayian
 -- REVISION:    1.0 - 09/04/2025 - File created.
--- DESCRIPTION: 
+-- DESCRIPTION: FSM of a Shift and Add Multiplier
 -- COMMENTS: 
 --------------------------------------------------------------------------------------
 
@@ -71,7 +71,7 @@ begin
         regBnext <= '1' when doneSAMB = '1' else regB;  
         doneMult <= regA AND regB;
 
-        process(reg_state, start, counter, reg_base, reg_expo, doneMult, baseIs2) is
+        process(reg_state, counter, start, counter, reg_base, reg_expo, doneMult, baseIs2) is
         begin
             selR <= '0';
             selB <= "00";
