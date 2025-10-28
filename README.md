@@ -9,7 +9,20 @@ The design preserves Ethereum’s stack-based model while leveraging parallel da
 
 ---
 
-## How to cite
+## 🧠 Overview
+
+EVMx provides a **hardware implementation of the EVM interpreter** tailored for FPGA devices.  
+It executes EVM bytecode at low latency and reduced power compared to software clients or general-purpose processors.
+
+The architecture:
+- Preserves EVM’s **stack-based execution** semantics.
+- Implements **modular arithmetic**, **opcode decoding**, and **gas metering** in hardware.
+- Supports **parallel instruction execution** for performance-critical opcodes.
+- Is fully synthesizable and verified on the **Xilinx Zynq UltraScale+ ZCU104** board.
+
+---
+
+## 🧾 How to Cite
 Hopefully coming soon. Our journal article is still under review.
 
 ## 📄 Publication
@@ -23,17 +36,6 @@ A **preliminary version** of this work was presented at the *IEEE COMPSAC 2025* 
 > [DOI](https://doi.org/10.1109/COMPSAC65507.2025.00231) | [Pre-print](https://arxiv.org/abs/2507.23518)
 
 A **complete implementation and extended analysis** of this work will be discussed in detail in a forthcoming journal publication *(TBD)*.
-
-## 🧠 Overview
-
-EVMx provides a **hardware implementation of the EVM interpreter** tailored for FPGA devices.  
-It executes EVM bytecode at low latency and reduced power compared to software clients or general-purpose processors.
-
-The architecture:
-- Preserves EVM’s **stack-based execution** semantics.
-- Implements **modular arithmetic**, **opcode decoding**, and **gas metering** in hardware.
-- Supports **parallel instruction execution** for performance-critical opcodes.
-- Is fully synthesizable and verified on the **Xilinx Zynq UltraScale+ ZCU104** board.
 
 ---
 
