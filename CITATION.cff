@@ -51,6 +51,6 @@ preferred-citation:
       given-names: "Kaiwen"
     - family-names: "Giard"
       given-names: "Pascal"
-  journal: "IEEE Transactions on Very Large Scale Integration (VLSI) Systems"
+  journal: #"IEEE Transactions on Very Large Scale Integration (VLSI) Systems"
   year: 2025
-  doi: "10.1109/TVLSI.2025.XXXXXXX"   # replace with actual DOI once assigned
+  doi: #"10.1109/TVLSI.2025.XXXXXXX"   # replace with actual DOI once assigned
