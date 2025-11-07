@@ -51,7 +51,6 @@ You may use, modify, and build hardware from this design, but if you distribute 
 you must release the source under the same license.
 
 See the full license in the [`LICENSE`](./LICENSE) file.
----
 
 ## 🧩 Repository Structure
 
