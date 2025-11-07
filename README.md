@@ -50,7 +50,7 @@ This project is licensed under the **CERN Open Hardware Licence – Weakly Recip
 You may use, modify, and build hardware from this design, but if you distribute modified hardware,  
 you must release the source under the same license.
 
-See the full license in the [`LICENSE`](./LICENSE) file.
+See the full license in the [`LICENSE`](./LICENSE.txt) file.
 
 ## 🧩 Repository Structure
 
