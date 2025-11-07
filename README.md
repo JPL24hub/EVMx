@@ -45,6 +45,14 @@ A **complete implementation and extended analysis** of this work is discussed in
 > [Publisher](https://ieeexplore.ieee.org/document/11230572) | [PDF](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11230572)
 ---
 
+## 📜 License
+This project is licensed under the **CERN Open Hardware Licence – Weakly Reciprocal (CERN-OHL-W-2.0)**.  
+You may use, modify, and build hardware from this design, but if you distribute modified hardware,  
+you must release the source under the same license.
+
+See the full license in the [`LICENSE`](./LICENSE) file.
+---
+
 ## 🧩 Repository Structure
 
 The repository follows a modular organization to promote readability, maintainability, and independent verification of each hardware component.
