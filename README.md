@@ -1,7 +1,7 @@
 # 🧩 EVMx: An FPGA-Based Accelerator for Smart Contract Processing
 
 [![License: CERN-OHL-W-2.0](https://img.shields.io/badge/License-CERN--OHL--W--2.0-green.svg)](https://cern-ohl.web.cern.ch/)
-[![Documentation](https://img.shields.io/badge/docs-latest-blue.svg)](https://joelponcha.github.io/evmx)
+[![Documentation](https://img.shields.io/badge/docs-latest-blue.svg)](https://github.com/JPL24hub/EVMx/tree/main/docs)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1234567.svg)](https://doi.org/10.1109/TVLSI.2025.3628118)
 
 **EVMx** is a hardware accelerator for the Ethereum Virtual Machine (EVM) that executes smart contracts directly on FPGA fabric.  
