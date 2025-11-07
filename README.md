@@ -42,7 +42,7 @@ A **complete implementation and extended analysis** of this work is discussed in
 > **J. P. Lemayian, G. Gagnon, K. Zhang and P. Giard**,  
 > *“EVMx: An FPGA-Based Accelerator for Smart Contract Processing,”*  
 > *IEEE Transactions on Very Large Scale Integration (VLSI)*,  
-> [Publisher](https://ieeexplore.ieee.org/document/112305721) | [PDF](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11230572)
+> [Publisher](https://ieeexplore.ieee.org/document/11230572) | [PDF](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11230572)
 ---
 
 ## 🧩 Repository Structure
