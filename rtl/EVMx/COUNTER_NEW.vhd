@@ -1,3 +1,17 @@
+-- SPDX-License-Identifier: CERN-OHL-W-2.0
+--
+-- This source describes Open Hardware and is licensed under the CERN-OHL-W v2.
+-- 
+-- You may redistribute and modify this source and make products using it under
+-- the terms of the CERN-OHL-W v2 (Weakly Reciprocal).
+--
+-- You should have received a copy of the CERN-OHL-W v2 license with this source.
+-- If not, see: https://cern-ohl.web.cern.ch/
+--
+-- The Documentation and source code for this project are available at:
+-- https://github.com/JPL24hub/EVMx
+--
+-- COPYRIGHT (C) 2025 Joel Poncha Lemayian
 ----------------------------------------------------------------------
 -- FILE:        COUNTER_NEW.vhd
 -- ENGINEER:    Poncha Lemayian

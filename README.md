@@ -1,6 +1,6 @@
 # 🧩 EVMx: An FPGA-Based Accelerator for Smart Contract Processing
 
-[![License](https://img.shields.io/badge/License-Apache--2.0-green.svg)](LICENSE)
+[![License: CERN-OHL-W-2.0](https://img.shields.io/badge/License-CERN--OHL--W--2.0-green.svg)](https://cern-ohl.web.cern.ch/)
 [![Documentation](https://img.shields.io/badge/docs-latest-blue.svg)](https://joelponcha.github.io/evmx)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1234567.svg)](https://doi.org/10.1109/TVLSI.2025.3628118)
 
@@ -66,4 +66,5 @@ The repository follows a modular organization to promote readability, maintainab
 ├── scripts/             # TCL and Python scripts for build automation (synthesis, implementation, sim)
 ├── sim/                 # Simulation outputs and waveform configurations (.wcfg)
 ├── tb/                  # Testbenches for module-level and system-level verification
+├── LICENSE              # CERN-OHL-W-2.0 hardware license
 └── README.md            # Project overview and documentation

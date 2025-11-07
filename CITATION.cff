@@ -19,7 +19,7 @@ authors:
 version: "1.0.0"
 date-released: "2025-10-21"
 repository-code: "https://github.com/JPL24hub/EVMx"
-license: "Apache-2.0"
+license: "CERN-OHL-W-2.0"
 keywords:
   - "FPGA"
   - "Ethereum"
