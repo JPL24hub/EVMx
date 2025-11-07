@@ -37,7 +37,7 @@ A **preliminary version** of this work was presented at the *IEEE COMPSAC 2025* 
 > Toronto, Canada, July 2025, pp. 1708–1713.  
 > [DOI](https://doi.org/10.1109/COMPSAC65507.2025.00231) | [Pre-print](https://arxiv.org/abs/2507.23518)
 
-A **complete implementation and extended analysis** of this work will be discussed in detail in a forthcoming journal publication *(TBD)*.
+A **complete implementation and extended analysis** of this work is discussed in detail in the following article.
 
 > **J. P. Lemayian, G. Gagnon, K. Zhang and P. Giard**,  
 > *“EVMx: An FPGA-Based Accelerator for Smart Contract Processing,”*  
