@@ -23,7 +23,9 @@ The architecture:
 ---
 
 ## 🧾 How to Cite
-Hopefully coming soon. Our journal article is still under review.
+J. P. Lemayian, G. Gagnon, K. Zhang and P. Giard, "EVMx: An FPGA-Based Accelerator for Smart Contract Processing," in IEEE Transactions on Very Large Scale Integration (VLSI) Systems, doi: 10.1109/TVLSI.2025.3628118.
+
+
 
 ## 📄 Publication
 
@@ -37,6 +39,10 @@ A **preliminary version** of this work was presented at the *IEEE COMPSAC 2025* 
 
 A **complete implementation and extended analysis** of this work will be discussed in detail in a forthcoming journal publication *(TBD)*.
 
+> **J. P. Lemayian, G. Gagnon, K. Zhang and P. Giard**,  
+> *“EVMx: An FPGA-Based Accelerator for Smart Contract Processing,”*  
+> *IEEE Transactions on Very Large Scale Integration (VLSI)*,  
+> [Publisher](https://ieeexplore.ieee.org/document/112305721) | [PDF](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11230572)
 ---
 
 ## 🧩 Repository Structure
