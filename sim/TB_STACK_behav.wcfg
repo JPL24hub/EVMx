@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TB_STACK_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TB_STACK" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="20.834 ns"></ZoomStartTime>
+      <ZoomEndTime time="145.834 ns"></ZoomEndTime>
+      <Cursor1Time time="110.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="202"></NameColumnWidth>
+      <ValueColumnWidth column_width="69"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/TB_STACK/clk_prd" type="other">
+      <obj_property name="ElementShortName">clk_prd</obj_property>
+      <obj_property name="ObjectShortName">clk_prd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_STACK/done_sim" type="other">
+      <obj_property name="ElementShortName">done_sim</obj_property>
+      <obj_property name="ObjectShortName">done_sim</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_STACK/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_STACK/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_STACK/rd" type="logic">
+      <obj_property name="ElementShortName">rd</obj_property>
+      <obj_property name="ObjectShortName">rd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_STACK/wrt" type="logic">
+      <obj_property name="ElementShortName">wrt</obj_property>
+      <obj_property name="ObjectShortName">wrt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_STACK/addr_offset" type="array">
+      <obj_property name="ElementShortName">addr_offset[9:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_offset[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_STACK/data_out_1" type="array">
+      <obj_property name="ElementShortName">data_out_1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_STACK/DEPTH_STACK" type="other">
+      <obj_property name="ElementShortName">DEPTH_STACK</obj_property>
+      <obj_property name="ObjectShortName">DEPTH_STACK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_STACK/WIDTH_STACK" type="other">
+      <obj_property name="ElementShortName">WIDTH_STACK</obj_property>
+      <obj_property name="ObjectShortName">WIDTH_STACK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_STACK/DUP_OFFSET" type="other">
+      <obj_property name="ElementShortName">DUP_OFFSET</obj_property>
+      <obj_property name="ObjectShortName">DUP_OFFSET</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_STACK/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[255:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_STACK/data_out0" type="array">
+      <obj_property name="ElementShortName">data_out0[255:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out0[255:0]</obj_property>
+      <obj_property name="CustomSignalColor">#A52A2A</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_STACK/push" type="logic">
+      <obj_property name="ElementShortName">push</obj_property>
+      <obj_property name="ObjectShortName">push</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_STACK/pop" type="logic">
+      <obj_property name="ElementShortName">pop</obj_property>
+      <obj_property name="ObjectShortName">pop</obj_property>
+   </wvobject>
+   <wvobject fp_name="group37" type="group">
+      <obj_property name="label">STACK</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/TB_STACK/uut/STACK/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_STACK/uut/STACK/we" type="logic">
+         <obj_property name="ElementShortName">we</obj_property>
+         <obj_property name="ObjectShortName">we</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_STACK/uut/cntl_pntr" type="array">
+         <obj_property name="ElementShortName">cntl_pntr[1:0]</obj_property>
+         <obj_property name="ObjectShortName">cntl_pntr[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_STACK/uut/sig_addr" type="array">
+         <obj_property name="ElementShortName">sig_addr[9:0]</obj_property>
+         <obj_property name="ObjectShortName">sig_addr[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_STACK/uut/STACK/addr" type="array">
+         <obj_property name="ElementShortName">addr[9:0]</obj_property>
+         <obj_property name="ObjectShortName">addr[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_STACK/uut/STACK/di" type="array">
+         <obj_property name="ElementShortName">di[255:0]</obj_property>
+         <obj_property name="ObjectShortName">di[255:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_STACK/uut/STACK/do" type="array">
+         <obj_property name="ElementShortName">do[255:0]</obj_property>
+         <obj_property name="ObjectShortName">do[255:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_STACK/uut/STACK/RAM_DEPTH" type="other">
+         <obj_property name="ElementShortName">RAM_DEPTH</obj_property>
+         <obj_property name="ObjectShortName">RAM_DEPTH</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_STACK/uut/STACK/RAM_WIDTH" type="other">
+         <obj_property name="ElementShortName">RAM_WIDTH</obj_property>
+         <obj_property name="ObjectShortName">RAM_WIDTH</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_STACK/uut/STACK/ARRD_WIDTH" type="other">
+         <obj_property name="ElementShortName">ARRD_WIDTH</obj_property>
+         <obj_property name="ObjectShortName">ARRD_WIDTH</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_STACK/uut/cntl_stack" type="array">
+         <obj_property name="ElementShortName">cntl_stack[1:0]</obj_property>
+         <obj_property name="ObjectShortName">cntl_stack[1:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_STACK/uut/pointer" type="array">
+         <obj_property name="ElementShortName">pointer[9:0]</obj_property>
+         <obj_property name="ObjectShortName">pointer[9:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_STACK/uut/pointer_next" type="array">
+         <obj_property name="ElementShortName">pointer_next[9:0]</obj_property>
+         <obj_property name="ObjectShortName">pointer_next[9:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="group57" type="group">
+         <obj_property name="label">RAM</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/TB_STACK/uut/STACK/RAM[0]" type="array">
+            <obj_property name="ElementShortName">[0][255:0]</obj_property>
+            <obj_property name="ObjectShortName">[0][255:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_STACK/uut/STACK/RAM[1]" type="array">
+            <obj_property name="ElementShortName">[1][255:0]</obj_property>
+            <obj_property name="ObjectShortName">[1][255:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_STACK/uut/STACK/RAM[2]" type="array">
+            <obj_property name="ElementShortName">[2][255:0]</obj_property>
+            <obj_property name="ObjectShortName">[2][255:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_STACK/uut/STACK/RAM[3]" type="array">
+            <obj_property name="ElementShortName">[3][255:0]</obj_property>
+            <obj_property name="ObjectShortName">[3][255:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_STACK/uut/STACK/RAM[4]" type="array">
+            <obj_property name="ElementShortName">[4][255:0]</obj_property>
+            <obj_property name="ObjectShortName">[4][255:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_STACK/uut/STACK/RAM[5]" type="array">
+            <obj_property name="ElementShortName">[5][255:0]</obj_property>
+            <obj_property name="ObjectShortName">[5][255:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_STACK/uut/STACK/RAM[6]" type="array">
+            <obj_property name="ElementShortName">[6][255:0]</obj_property>
+            <obj_property name="ObjectShortName">[6][255:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_STACK/uut/STACK/RAM[7]" type="array">
+            <obj_property name="ElementShortName">[7][255:0]</obj_property>
+            <obj_property name="ObjectShortName">[7][255:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_STACK/uut/STACK/RAM[8]" type="array">
+            <obj_property name="ElementShortName">[8][255:0]</obj_property>
+            <obj_property name="ObjectShortName">[8][255:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_STACK/uut/STACK/RAM[9]" type="array">
+            <obj_property name="ElementShortName">[9][255:0]</obj_property>
+            <obj_property name="ObjectShortName">[9][255:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_STACK/uut/STACK/RAM[10]" type="array">
+            <obj_property name="ElementShortName">[10][255:0]</obj_property>
+            <obj_property name="ObjectShortName">[10][255:0]</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

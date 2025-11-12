@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TB_NON_REST_DIV_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TB_NON_REST_DIV" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="482.850000 us"></ZoomStartTime>
+      <ZoomEndTime time="524.800001 us"></ZoomEndTime>
+      <Cursor1Time time="542.500000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="150"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="17" />
+   <wave_markers>
+      <marker time="2000000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/TB_NON_REST_DIV/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_NON_REST_DIV/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_NON_REST_DIV/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_NON_REST_DIV/ready" type="logic">
+      <obj_property name="ElementShortName">ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_NON_REST_DIV/a" type="array">
+      <obj_property name="ElementShortName">a[31:0]</obj_property>
+      <obj_property name="ObjectShortName">a[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_NON_REST_DIV/b" type="array">
+      <obj_property name="ElementShortName">b[31:0]</obj_property>
+      <obj_property name="ObjectShortName">b[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_NON_REST_DIV/quotientOut" type="array">
+      <obj_property name="ElementShortName">quotientOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">quotientOut[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_NON_REST_DIV/remainder" type="array">
+      <obj_property name="ElementShortName">remainder[31:0]</obj_property>
+      <obj_property name="ObjectShortName">remainder[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_NON_REST_DIV/done_sim" type="other">
+      <obj_property name="ElementShortName">done_sim</obj_property>
+      <obj_property name="ObjectShortName">done_sim</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_NON_REST_DIV/WIDTH" type="other">
+      <obj_property name="ElementShortName">WIDTH</obj_property>
+      <obj_property name="ObjectShortName">WIDTH</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_NON_REST_DIV/CLK_PERIOD" type="other">
+      <obj_property name="ElementShortName">CLK_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">CLK_PERIOD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_NON_REST_DIV/DUT/reg_state" type="other">
+      <obj_property name="ElementShortName">reg_state</obj_property>
+      <obj_property name="ObjectShortName">reg_state</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_NON_REST_DIV/DUT/next_state" type="other">
+      <obj_property name="ElementShortName">next_state</obj_property>
+      <obj_property name="ObjectShortName">next_state</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_NON_REST_DIV/DUT/regM" type="array">
+      <obj_property name="ElementShortName">regM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">regM[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_NON_REST_DIV/DUT/regA" type="array">
+      <obj_property name="ElementShortName">regA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">regA[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_NON_REST_DIV/DUT/regQ" type="array">
+      <obj_property name="ElementShortName">regQ[31:0]</obj_property>
+      <obj_property name="ObjectShortName">regQ[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_NON_REST_DIV/DUT/counter" type="other">
+      <obj_property name="ElementShortName">counter</obj_property>
+      <obj_property name="ObjectShortName">counter</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TB_EXPO_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TB_EXPO" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="2,043.150000 us"></ZoomStartTime>
+      <ZoomEndTime time="2,109.700001 us"></ZoomEndTime>
+      <Cursor1Time time="2,105.500000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="190"></NameColumnWidth>
+      <ValueColumnWidth column_width="80"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="26" />
+   <wvobject fp_name="/TB_EXPO/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EXPO/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EXPO/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EXPO/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EXPO/b" type="array">
+      <obj_property name="ElementShortName">b[255:0]</obj_property>
+      <obj_property name="ObjectShortName">b[255:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EXPO/a" type="array">
+      <obj_property name="ElementShortName">a[255:0]</obj_property>
+      <obj_property name="ObjectShortName">a[255:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EXPO/result" type="array">
+      <obj_property name="ElementShortName">result[255:0]</obj_property>
+      <obj_property name="ObjectShortName">result[255:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EXPO/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EXPO/done_sim" type="other">
+      <obj_property name="ElementShortName">done_sim</obj_property>
+      <obj_property name="ObjectShortName">done_sim</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EXPO/CLK_PERIOD" type="other">
+      <obj_property name="ElementShortName">CLK_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">CLK_PERIOD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EXPO/WIDTH" type="other">
+      <obj_property name="ElementShortName">WIDTH</obj_property>
+      <obj_property name="ObjectShortName">WIDTH</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EXPO/EXPONENTIAL/results" type="array">
+      <obj_property name="ElementShortName">results[255:0]</obj_property>
+      <obj_property name="ObjectShortName">results[255:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EXPO/EXPONENTIAL/reg_base" type="array">
+      <obj_property name="ElementShortName">reg_base[255:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_base[255:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EXPO/EXPONENTIAL/reg_expo" type="array">
+      <obj_property name="ElementShortName">reg_expo[255:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_expo[255:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EXPO/EXPONENTIAL/prod0" type="array">
+      <obj_property name="ElementShortName">prod0[511:0]</obj_property>
+      <obj_property name="ObjectShortName">prod0[511:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EXPO/EXPONENTIAL/prod1" type="array">
+      <obj_property name="ElementShortName">prod1[511:0]</obj_property>
+      <obj_property name="ObjectShortName">prod1[511:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EXPO/EXPONENTIAL/selR" type="logic">
+      <obj_property name="ElementShortName">selR</obj_property>
+      <obj_property name="ObjectShortName">selR</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EXPO/EXPONENTIAL/selB" type="array">
+      <obj_property name="ElementShortName">selB[1:0]</obj_property>
+      <obj_property name="ObjectShortName">selB[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EXPO/EXPONENTIAL/selE" type="array">
+      <obj_property name="ElementShortName">selE[1:0]</obj_property>
+      <obj_property name="ObjectShortName">selE[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EXPO/EXPONENTIAL/base_nxt" type="array">
+      <obj_property name="ElementShortName">base_nxt[255:0]</obj_property>
+      <obj_property name="ObjectShortName">base_nxt[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EXPO/EXPONENTIAL/expo_nxt" type="array">
+      <obj_property name="ElementShortName">expo_nxt[255:0]</obj_property>
+      <obj_property name="ObjectShortName">expo_nxt[255:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EXPO/EXPONENTIAL/counter" type="array">
+      <obj_property name="ElementShortName">counter[255:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[255:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="group41" type="group">
+      <obj_property name="label">MULTA</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/TB_EXPO/EXPONENTIAL/SHIFT_ADD_MULT_A/A" type="array">
+         <obj_property name="ElementShortName">A[255:0]</obj_property>
+         <obj_property name="ObjectShortName">A[255:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EXPO/EXPONENTIAL/SHIFT_ADD_MULT_A/B" type="array">
+         <obj_property name="ElementShortName">B[255:0]</obj_property>
+         <obj_property name="ObjectShortName">B[255:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EXPO/EXPONENTIAL/SHIFT_ADD_MULT_A/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EXPO/EXPONENTIAL/SHIFT_ADD_MULT_A/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EXPO/EXPONENTIAL/SHIFT_ADD_MULT_A/start" type="logic">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EXPO/EXPONENTIAL/SHIFT_ADD_MULT_A/done" type="logic">
+         <obj_property name="ElementShortName">done</obj_property>
+         <obj_property name="ObjectShortName">done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EXPO/EXPONENTIAL/SHIFT_ADD_MULT_A/product" type="array">
+         <obj_property name="ElementShortName">product[511:0]</obj_property>
+         <obj_property name="ObjectShortName">product[511:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group49" type="group">
+      <obj_property name="label">MULTB</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/TB_EXPO/EXPONENTIAL/SHIFT_ADD_MULT_B/A" type="array">
+         <obj_property name="ElementShortName">A[255:0]</obj_property>
+         <obj_property name="ObjectShortName">A[255:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EXPO/EXPONENTIAL/SHIFT_ADD_MULT_B/B" type="array">
+         <obj_property name="ElementShortName">B[255:0]</obj_property>
+         <obj_property name="ObjectShortName">B[255:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EXPO/EXPONENTIAL/SHIFT_ADD_MULT_B/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EXPO/EXPONENTIAL/SHIFT_ADD_MULT_B/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EXPO/EXPONENTIAL/SHIFT_ADD_MULT_B/start" type="logic">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EXPO/EXPONENTIAL/SHIFT_ADD_MULT_B/done" type="logic">
+         <obj_property name="ElementShortName">done</obj_property>
+         <obj_property name="ObjectShortName">done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EXPO/EXPONENTIAL/SHIFT_ADD_MULT_B/product" type="array">
+         <obj_property name="ElementShortName">product[511:0]</obj_property>
+         <obj_property name="ObjectShortName">product[511:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group52" type="group">
+      <obj_property name="label">FSM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/TB_EXPO/EXPONENTIAL/FSM_SAM/reg_state" type="other">
+         <obj_property name="ElementShortName">reg_state</obj_property>
+         <obj_property name="ObjectShortName">reg_state</obj_property>
+         <obj_property name="CustomSignalColor">#FF0080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EXPO/EXPONENTIAL/FSM_SAM/next_state" type="other">
+         <obj_property name="ElementShortName">next_state</obj_property>
+         <obj_property name="ObjectShortName">next_state</obj_property>
+         <obj_property name="CustomSignalColor">#FF0080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EXPO/EXPONENTIAL/FSM_SAM/baseIs2" type="logic">
+         <obj_property name="ElementShortName">baseIs2</obj_property>
+         <obj_property name="ObjectShortName">baseIs2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EXPO/EXPONENTIAL/FSM_SAM/counter" type="array">
+         <obj_property name="ElementShortName">counter[255:0]</obj_property>
+         <obj_property name="ObjectShortName">counter[255:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EXPO/EXPONENTIAL/FSM_SAM/start" type="logic">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EXPO/EXPONENTIAL/FSM_SAM/reg_base" type="array">
+         <obj_property name="ElementShortName">reg_base[255:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_base[255:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EXPO/EXPONENTIAL/FSM_SAM/reg_expo" type="array">
+         <obj_property name="ElementShortName">reg_expo[255:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_expo[255:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EXPO/EXPONENTIAL/FSM_SAM/doneSAMA" type="logic">
+         <obj_property name="ElementShortName">doneSAMA</obj_property>
+         <obj_property name="ObjectShortName">doneSAMA</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EXPO/EXPONENTIAL/FSM_SAM/doneSAMB" type="logic">
+         <obj_property name="ElementShortName">doneSAMB</obj_property>
+         <obj_property name="ObjectShortName">doneSAMB</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EXPO/EXPONENTIAL/FSM_SAM/selB" type="array">
+         <obj_property name="ElementShortName">selB[1:0]</obj_property>
+         <obj_property name="ObjectShortName">selB[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EXPO/EXPONENTIAL/FSM_SAM/selE" type="array">
+         <obj_property name="ElementShortName">selE[1:0]</obj_property>
+         <obj_property name="ObjectShortName">selE[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EXPO/EXPONENTIAL/FSM_SAM/fsmControl" type="array">
+         <obj_property name="ElementShortName">fsmControl[9:0]</obj_property>
+         <obj_property name="ObjectShortName">fsmControl[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EXPO/EXPONENTIAL/FSM_SAM/regA" type="logic">
+         <obj_property name="ElementShortName">regA</obj_property>
+         <obj_property name="ObjectShortName">regA</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EXPO/EXPONENTIAL/FSM_SAM/regB" type="logic">
+         <obj_property name="ElementShortName">regB</obj_property>
+         <obj_property name="ObjectShortName">regB</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EXPO/EXPONENTIAL/FSM_SAM/done" type="logic">
+         <obj_property name="ElementShortName">done</obj_property>
+         <obj_property name="ObjectShortName">done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EXPO/EXPONENTIAL/FSM_SAM/doneMult" type="logic">
+         <obj_property name="ElementShortName">doneMult</obj_property>
+         <obj_property name="ObjectShortName">doneMult</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group113" type="group">
+      <obj_property name="label">VIEW</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/TB_EXPO/EXPONENTIAL/selRes" type="array">
+         <obj_property name="ElementShortName">selRes[2:0]</obj_property>
+         <obj_property name="ObjectShortName">selRes[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EXPO/EXPONENTIAL/enSaveA" type="logic">
+         <obj_property name="ElementShortName">enSaveA</obj_property>
+         <obj_property name="ObjectShortName">enSaveA</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EXPO/EXPONENTIAL/saveA" type="array">
+         <obj_property name="ElementShortName">saveA[511:0]</obj_property>
+         <obj_property name="ObjectShortName">saveA[511:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EXPO/EXPONENTIAL/saveB" type="array">
+         <obj_property name="ElementShortName">saveB[511:0]</obj_property>
+         <obj_property name="ObjectShortName">saveB[511:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EXPO/EXPONENTIAL/base2" type="array">
+         <obj_property name="ElementShortName">base2[255:0]</obj_property>
+         <obj_property name="ObjectShortName">base2[255:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EXPO/EXPONENTIAL/baseIs2" type="logic">
+         <obj_property name="ElementShortName">baseIs2</obj_property>
+         <obj_property name="ObjectShortName">baseIs2</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

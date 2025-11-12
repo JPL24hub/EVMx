@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TB_EVM_MEMORY_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TB_EVM_MEMORY" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="60.027273 us"></ZoomEndTime>
+      <Cursor1Time time="5.421818 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="148"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="30" />
+   <wvobject fp_name="/TB_EVM_MEMORY/MEM_in" type="array">
+      <obj_property name="ElementShortName">MEM_in[255:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM_in[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EVM_MEMORY/mem_rd" type="logic">
+      <obj_property name="ElementShortName">mem_rd</obj_property>
+      <obj_property name="ObjectShortName">mem_rd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EVM_MEMORY/mem_wrt" type="logic">
+      <obj_property name="ElementShortName">mem_wrt</obj_property>
+      <obj_property name="ObjectShortName">mem_wrt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EVM_MEMORY/offset" type="array">
+      <obj_property name="ElementShortName">offset[255:0]</obj_property>
+      <obj_property name="ObjectShortName">offset[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EVM_MEMORY/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EVM_MEMORY/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EVM_MEMORY/done_wt" type="logic">
+      <obj_property name="ElementShortName">done_wt</obj_property>
+      <obj_property name="ObjectShortName">done_wt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EVM_MEMORY/dut/counter" type="other">
+      <obj_property name="ElementShortName">counter</obj_property>
+      <obj_property name="ObjectShortName">counter</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EVM_MEMORY/done_rd" type="logic">
+      <obj_property name="ElementShortName">done_rd</obj_property>
+      <obj_property name="ObjectShortName">done_rd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EVM_MEMORY/MEM_in" type="array">
+      <obj_property name="ElementShortName">MEM_in[255:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM_in[255:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EVM_MEMORY/dut/bytData" type="array">
+      <obj_property name="ElementShortName">bytData[7:0]</obj_property>
+      <obj_property name="ObjectShortName">bytData[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EVM_MEMORY/access_MEM" type="array">
+      <obj_property name="ElementShortName">access_MEM[255:0]</obj_property>
+      <obj_property name="ObjectShortName">access_MEM[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EVM_MEMORY/MEM_out" type="array">
+      <obj_property name="ElementShortName">MEM_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM_out[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EVM_MEMORY/done_sim" type="other">
+      <obj_property name="ElementShortName">done_sim</obj_property>
+      <obj_property name="ObjectShortName">done_sim</obj_property>
+   </wvobject>
+   <wvobject fp_name="group113" type="group">
+      <obj_property name="label">WRITE</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/PROCESSORW/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/PROCESSORW/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/PROCESSORW/mem_wrt" type="logic">
+         <obj_property name="ElementShortName">mem_wrt</obj_property>
+         <obj_property name="ObjectShortName">mem_wrt</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/PROCESSORW/size" type="array">
+         <obj_property name="ElementShortName">size[9:0]</obj_property>
+         <obj_property name="ObjectShortName">size[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/PROCESSORW/offDestOff" type="array">
+         <obj_property name="ElementShortName">offDestOff[255:0]</obj_property>
+         <obj_property name="ObjectShortName">offDestOff[255:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/PROCESSORW/cntr_out0" type="array">
+         <obj_property name="ElementShortName">cntr_out0[255:0]</obj_property>
+         <obj_property name="ObjectShortName">cntr_out0[255:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/PROCESSORW/sel_cntr0" type="array">
+         <obj_property name="ElementShortName">sel_cntr0[1:0]</obj_property>
+         <obj_property name="ObjectShortName">sel_cntr0[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/PROCESSORW/done_wt" type="logic">
+         <obj_property name="ElementShortName">done_wt</obj_property>
+         <obj_property name="ObjectShortName">done_wt</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/PROCESSORW/rst_cntr" type="logic">
+         <obj_property name="ElementShortName">rst_cntr</obj_property>
+         <obj_property name="ObjectShortName">rst_cntr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/PROCESSORW/reg_state" type="other">
+         <obj_property name="ElementShortName">reg_state</obj_property>
+         <obj_property name="ObjectShortName">reg_state</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/PROCESSORW/next_state" type="other">
+         <obj_property name="ElementShortName">next_state</obj_property>
+         <obj_property name="ObjectShortName">next_state</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/PROCESSORW/SIZE_COPY" type="other">
+         <obj_property name="ElementShortName">SIZE_COPY</obj_property>
+         <obj_property name="ObjectShortName">SIZE_COPY</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/PROCESSORW/WIDTH_CNTR" type="other">
+         <obj_property name="ElementShortName">WIDTH_CNTR</obj_property>
+         <obj_property name="ObjectShortName">WIDTH_CNTR</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/PROCESSORW/WIDTH_MEMORY_ADDR" type="other">
+         <obj_property name="ElementShortName">WIDTH_MEMORY_ADDR</obj_property>
+         <obj_property name="ObjectShortName">WIDTH_MEMORY_ADDR</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group123" type="group">
+      <obj_property name="label">CNTR0</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/COUNTER0/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/COUNTER0/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/COUNTER0/sel_cntr" type="array">
+         <obj_property name="ElementShortName">sel_cntr[1:0]</obj_property>
+         <obj_property name="ObjectShortName">sel_cntr[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/COUNTER0/data_in" type="array">
+         <obj_property name="ElementShortName">data_in[255:0]</obj_property>
+         <obj_property name="ObjectShortName">data_in[255:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/COUNTER0/data_out" type="array">
+         <obj_property name="ElementShortName">data_out[255:0]</obj_property>
+         <obj_property name="ObjectShortName">data_out[255:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/COUNTER0/counter_next" type="array">
+         <obj_property name="ElementShortName">counter_next[255:0]</obj_property>
+         <obj_property name="ObjectShortName">counter_next[255:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/COUNTER0/counter" type="array">
+         <obj_property name="ElementShortName">counter[255:0]</obj_property>
+         <obj_property name="ObjectShortName">counter[255:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/COUNTER0/diff" type="array">
+         <obj_property name="ElementShortName">diff[255:0]</obj_property>
+         <obj_property name="ObjectShortName">diff[255:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/COUNTER0/WIDTH_CNTR" type="other">
+         <obj_property name="ElementShortName">WIDTH_CNTR</obj_property>
+         <obj_property name="ObjectShortName">WIDTH_CNTR</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group98" type="group">
+      <obj_property name="label">MEM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/we" type="logic">
+         <obj_property name="ElementShortName">we</obj_property>
+         <obj_property name="ObjectShortName">we</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/wt_addr" type="array">
+         <obj_property name="ElementShortName">wt_addr[255:0]</obj_property>
+         <obj_property name="ObjectShortName">wt_addr[255:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/rd_addr" type="array">
+         <obj_property name="ElementShortName">rd_addr[255:0]</obj_property>
+         <obj_property name="ObjectShortName">rd_addr[255:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/do" type="array">
+         <obj_property name="ElementShortName">do[7:0]</obj_property>
+         <obj_property name="ObjectShortName">do[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/MEM_in" type="array">
+         <obj_property name="ElementShortName">MEM_in[255:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM_in[255:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/di" type="array">
+         <obj_property name="ElementShortName">di[7:0]</obj_property>
+         <obj_property name="ObjectShortName">di[7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[0]" type="array">
+         <obj_property name="ElementShortName">[0][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[0][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[1]" type="array">
+         <obj_property name="ElementShortName">[1][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[1][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[2]" type="array">
+         <obj_property name="ElementShortName">[2][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[2][0:7]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[3]" type="array">
+         <obj_property name="ElementShortName">[3][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[3][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[4]" type="array">
+         <obj_property name="ElementShortName">[4][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[4][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[5]" type="array">
+         <obj_property name="ElementShortName">[5][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[5][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[6]" type="array">
+         <obj_property name="ElementShortName">[6][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[6][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[7]" type="array">
+         <obj_property name="ElementShortName">[7][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[7][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[8]" type="array">
+         <obj_property name="ElementShortName">[8][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[8][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[9]" type="array">
+         <obj_property name="ElementShortName">[9][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[9][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[10]" type="array">
+         <obj_property name="ElementShortName">[10][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[10][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[11]" type="array">
+         <obj_property name="ElementShortName">[11][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[11][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[12]" type="array">
+         <obj_property name="ElementShortName">[12][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[12][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[13]" type="array">
+         <obj_property name="ElementShortName">[13][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[13][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[14]" type="array">
+         <obj_property name="ElementShortName">[14][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[14][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[15]" type="array">
+         <obj_property name="ElementShortName">[15][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[15][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[16]" type="array">
+         <obj_property name="ElementShortName">[16][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[16][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[17]" type="array">
+         <obj_property name="ElementShortName">[17][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[17][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[18]" type="array">
+         <obj_property name="ElementShortName">[18][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[18][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[19]" type="array">
+         <obj_property name="ElementShortName">[19][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[19][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[20]" type="array">
+         <obj_property name="ElementShortName">[20][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[20][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[21]" type="array">
+         <obj_property name="ElementShortName">[21][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[21][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[22]" type="array">
+         <obj_property name="ElementShortName">[22][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[22][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[23]" type="array">
+         <obj_property name="ElementShortName">[23][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[23][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[24]" type="array">
+         <obj_property name="ElementShortName">[24][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[24][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[25]" type="array">
+         <obj_property name="ElementShortName">[25][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[25][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[26]" type="array">
+         <obj_property name="ElementShortName">[26][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[26][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[27]" type="array">
+         <obj_property name="ElementShortName">[27][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[27][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[28]" type="array">
+         <obj_property name="ElementShortName">[28][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[28][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[29]" type="array">
+         <obj_property name="ElementShortName">[29][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[29][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[30]" type="array">
+         <obj_property name="ElementShortName">[30][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[30][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[31]" type="array">
+         <obj_property name="ElementShortName">[31][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[31][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[32]" type="array">
+         <obj_property name="ElementShortName">[32][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[32][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[33]" type="array">
+         <obj_property name="ElementShortName">[33][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[33][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[34]" type="array">
+         <obj_property name="ElementShortName">[34][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[34][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[35]" type="array">
+         <obj_property name="ElementShortName">[35][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[35][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[36]" type="array">
+         <obj_property name="ElementShortName">[36][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[36][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[37]" type="array">
+         <obj_property name="ElementShortName">[37][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[37][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[38]" type="array">
+         <obj_property name="ElementShortName">[38][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[38][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[39]" type="array">
+         <obj_property name="ElementShortName">[39][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[39][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[40]" type="array">
+         <obj_property name="ElementShortName">[40][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[40][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[41]" type="array">
+         <obj_property name="ElementShortName">[41][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[41][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[42]" type="array">
+         <obj_property name="ElementShortName">[42][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[42][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[43]" type="array">
+         <obj_property name="ElementShortName">[43][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[43][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[44]" type="array">
+         <obj_property name="ElementShortName">[44][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[44][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[45]" type="array">
+         <obj_property name="ElementShortName">[45][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[45][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[46]" type="array">
+         <obj_property name="ElementShortName">[46][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[46][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[47]" type="array">
+         <obj_property name="ElementShortName">[47][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[47][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[48]" type="array">
+         <obj_property name="ElementShortName">[48][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[48][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[49]" type="array">
+         <obj_property name="ElementShortName">[49][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[49][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[50]" type="array">
+         <obj_property name="ElementShortName">[50][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[50][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[51]" type="array">
+         <obj_property name="ElementShortName">[51][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[51][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[52]" type="array">
+         <obj_property name="ElementShortName">[52][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[52][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[53]" type="array">
+         <obj_property name="ElementShortName">[53][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[53][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[54]" type="array">
+         <obj_property name="ElementShortName">[54][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[54][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[55]" type="array">
+         <obj_property name="ElementShortName">[55][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[55][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[56]" type="array">
+         <obj_property name="ElementShortName">[56][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[56][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[57]" type="array">
+         <obj_property name="ElementShortName">[57][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[57][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[58]" type="array">
+         <obj_property name="ElementShortName">[58][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[58][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[59]" type="array">
+         <obj_property name="ElementShortName">[59][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[59][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[60]" type="array">
+         <obj_property name="ElementShortName">[60][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[60][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[61]" type="array">
+         <obj_property name="ElementShortName">[61][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[61][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[62]" type="array">
+         <obj_property name="ElementShortName">[62][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[62][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[63]" type="array">
+         <obj_property name="ElementShortName">[63][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[63][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[64]" type="array">
+         <obj_property name="ElementShortName">[64][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[64][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[65]" type="array">
+         <obj_property name="ElementShortName">[65][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[65][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[66]" type="array">
+         <obj_property name="ElementShortName">[66][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[66][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[67]" type="array">
+         <obj_property name="ElementShortName">[67][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[67][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[68]" type="array">
+         <obj_property name="ElementShortName">[68][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[68][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[69]" type="array">
+         <obj_property name="ElementShortName">[69][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[69][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[70]" type="array">
+         <obj_property name="ElementShortName">[70][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[70][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[71]" type="array">
+         <obj_property name="ElementShortName">[71][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[71][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[72]" type="array">
+         <obj_property name="ElementShortName">[72][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[72][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[73]" type="array">
+         <obj_property name="ElementShortName">[73][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[73][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[74]" type="array">
+         <obj_property name="ElementShortName">[74][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[74][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[75]" type="array">
+         <obj_property name="ElementShortName">[75][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[75][0:7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/MEMORY/RAM[76]" type="array">
+         <obj_property name="ElementShortName">[76][0:7]</obj_property>
+         <obj_property name="ObjectShortName">[76][0:7]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group147" type="group">
+      <obj_property name="label">READ</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/PROCESSORR/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/PROCESSORR/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/PROCESSORR/mem_rd" type="logic">
+         <obj_property name="ElementShortName">mem_rd</obj_property>
+         <obj_property name="ObjectShortName">mem_rd</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/PROCESSORR/size" type="array">
+         <obj_property name="ElementShortName">size[9:0]</obj_property>
+         <obj_property name="ObjectShortName">size[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/PROCESSORR/offDestOff" type="array">
+         <obj_property name="ElementShortName">offDestOff[255:0]</obj_property>
+         <obj_property name="ObjectShortName">offDestOff[255:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/PROCESSORR/cntr_out1" type="array">
+         <obj_property name="ElementShortName">cntr_out1[255:0]</obj_property>
+         <obj_property name="ObjectShortName">cntr_out1[255:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/PROCESSORR/sel_cntr1" type="array">
+         <obj_property name="ElementShortName">sel_cntr1[1:0]</obj_property>
+         <obj_property name="ObjectShortName">sel_cntr1[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/PROCESSORR/done_rd" type="logic">
+         <obj_property name="ElementShortName">done_rd</obj_property>
+         <obj_property name="ObjectShortName">done_rd</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/PROCESSORR/reg_stateR" type="other">
+         <obj_property name="ElementShortName">reg_stateR</obj_property>
+         <obj_property name="ObjectShortName">reg_stateR</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/PROCESSORR/next_stateR" type="other">
+         <obj_property name="ElementShortName">next_stateR</obj_property>
+         <obj_property name="ObjectShortName">next_stateR</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/PROCESSORR/SIZE_COPY" type="other">
+         <obj_property name="ElementShortName">SIZE_COPY</obj_property>
+         <obj_property name="ObjectShortName">SIZE_COPY</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/PROCESSORR/WIDTH_CNTR" type="other">
+         <obj_property name="ElementShortName">WIDTH_CNTR</obj_property>
+         <obj_property name="ObjectShortName">WIDTH_CNTR</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/PROCESSORR/WIDTH_MEMORY_ADDR" type="other">
+         <obj_property name="ElementShortName">WIDTH_MEMORY_ADDR</obj_property>
+         <obj_property name="ObjectShortName">WIDTH_MEMORY_ADDR</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group157" type="group">
+      <obj_property name="label">CNTR1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/COUNTER1/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/COUNTER1/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/COUNTER1/sel_cntr" type="array">
+         <obj_property name="ElementShortName">sel_cntr[1:0]</obj_property>
+         <obj_property name="ObjectShortName">sel_cntr[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/COUNTER1/data_in" type="array">
+         <obj_property name="ElementShortName">data_in[255:0]</obj_property>
+         <obj_property name="ObjectShortName">data_in[255:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/COUNTER1/data_out" type="array">
+         <obj_property name="ElementShortName">data_out[255:0]</obj_property>
+         <obj_property name="ObjectShortName">data_out[255:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/COUNTER1/counter_next" type="array">
+         <obj_property name="ElementShortName">counter_next[255:0]</obj_property>
+         <obj_property name="ObjectShortName">counter_next[255:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/COUNTER1/counter" type="array">
+         <obj_property name="ElementShortName">counter[255:0]</obj_property>
+         <obj_property name="ObjectShortName">counter[255:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/COUNTER1/diff" type="array">
+         <obj_property name="ElementShortName">diff[255:0]</obj_property>
+         <obj_property name="ObjectShortName">diff[255:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_MEMORY/dut/COUNTER1/WIDTH_CNTR" type="other">
+         <obj_property name="ElementShortName">WIDTH_CNTR</obj_property>
+         <obj_property name="ObjectShortName">WIDTH_CNTR</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/TB_EVM_MEMORY/offDestOff" type="array">
+      <obj_property name="ElementShortName">offDestOff[255:0]</obj_property>
+      <obj_property name="ObjectShortName">offDestOff[255:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EVM_MEMORY/size" type="array">
+      <obj_property name="ElementShortName">size[9:0]</obj_property>
+      <obj_property name="ObjectShortName">size[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EVM_MEMORY/dut/msize_nxt" type="array">
+      <obj_property name="ElementShortName">msize_nxt[255:0]</obj_property>
+      <obj_property name="ObjectShortName">msize_nxt[255:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EVM_MEMORY/dut/msize" type="array">
+      <obj_property name="ElementShortName">msize[255:0]</obj_property>
+      <obj_property name="ObjectShortName">msize[255:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EVM_MEMORY/dut/sel_msize" type="logic">
+      <obj_property name="ElementShortName">sel_msize</obj_property>
+      <obj_property name="ObjectShortName">sel_msize</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EVM_MEMORY/dut/sig_mux" type="array">
+      <obj_property name="ElementShortName">sig_mux[255:0]</obj_property>
+      <obj_property name="ObjectShortName">sig_mux[255:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EVM_MEMORY/dut/sizeOut" type="array">
+      <obj_property name="ElementShortName">sizeOut[255:0]</obj_property>
+      <obj_property name="ObjectShortName">sizeOut[255:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

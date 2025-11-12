@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TB_EVM_BLC_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TB_EVM_BLC" />
+            <top_module name="pkg_evm" />
+            <top_module name="pkg_keccak" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="479.220000 us"></ZoomStartTime>
+      <ZoomEndTime time="495.520001 us"></ZoomEndTime>
+      <Cursor1Time time="488.000000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="160"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="14" />
+   <wave_markers>
+      <marker time="32000000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/TB_EVM_BLC/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EVM_BLC/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EVM_BLC/startEVM" type="logic">
+      <obj_property name="ElementShortName">startEVM</obj_property>
+      <obj_property name="ObjectShortName">startEVM</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EVM_BLC/loadBytecode" type="logic">
+      <obj_property name="ElementShortName">loadBytecode</obj_property>
+      <obj_property name="ObjectShortName">loadBytecode</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EVM_BLC/done_sim" type="other">
+      <obj_property name="ElementShortName">done_sim</obj_property>
+      <obj_property name="ObjectShortName">done_sim</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EVM_BLC/BytecodeLoaded" type="logic">
+      <obj_property name="ElementShortName">BytecodeLoaded</obj_property>
+      <obj_property name="ObjectShortName">BytecodeLoaded</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EVM_BLC/toBYTCD" type="array">
+      <obj_property name="ElementShortName">toBYTCD[1023:0]</obj_property>
+      <obj_property name="ObjectShortName">toBYTCD[1023:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EVM_BLC/doneEVM" type="logic">
+      <obj_property name="ElementShortName">doneEVM</obj_property>
+      <obj_property name="ObjectShortName">doneEVM</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_EVM_BLC/callData" type="array">
+      <obj_property name="ElementShortName">callData[1023:0]</obj_property>
+      <obj_property name="ObjectShortName">callData[1023:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group59" type="group">
+      <obj_property name="label">FSM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/FSM_EVM/outBYTCD8" type="array">
+         <obj_property name="ElementShortName">outBYTCD8[7:0]</obj_property>
+         <obj_property name="ObjectShortName">outBYTCD8[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/FSM_EVM/reg_state" type="other">
+         <obj_property name="ElementShortName">reg_state</obj_property>
+         <obj_property name="ObjectShortName">reg_state</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/FSM_EVM/next_state" type="other">
+         <obj_property name="ElementShortName">next_state</obj_property>
+         <obj_property name="ObjectShortName">next_state</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group76" type="group">
+      <obj_property name="label">EXP</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/EXPONENTIAL/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/EXPONENTIAL/reset" type="logic">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/EXPONENTIAL/start" type="logic">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/EXPONENTIAL/base" type="array">
+         <obj_property name="ElementShortName">base[255:0]</obj_property>
+         <obj_property name="ObjectShortName">base[255:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/EXPONENTIAL/exponent" type="array">
+         <obj_property name="ElementShortName">exponent[255:0]</obj_property>
+         <obj_property name="ObjectShortName">exponent[255:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/EXPONENTIAL/expResult" type="array">
+         <obj_property name="ElementShortName">expResult[255:0]</obj_property>
+         <obj_property name="ObjectShortName">expResult[255:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/EXPONENTIAL/done" type="logic">
+         <obj_property name="ElementShortName">done</obj_property>
+         <obj_property name="ObjectShortName">done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/EXPONENTIAL/results" type="array">
+         <obj_property name="ElementShortName">results[255:0]</obj_property>
+         <obj_property name="ObjectShortName">results[255:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group92" type="group">
+      <obj_property name="label">BCM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/start" type="logic">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/RAMloaded" type="logic">
+         <obj_property name="ElementShortName">RAMloaded</obj_property>
+         <obj_property name="ObjectShortName">RAMloaded</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/ldNext" type="logic">
+         <obj_property name="ElementShortName">ldNext</obj_property>
+         <obj_property name="ObjectShortName">ldNext</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/toBYTCD" type="array">
+         <obj_property name="ElementShortName">toBYTCD[1023:0]</obj_property>
+         <obj_property name="ObjectShortName">toBYTCD[1023:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/pc" type="array">
+         <obj_property name="ElementShortName">pc[6:0]</obj_property>
+         <obj_property name="ObjectShortName">pc[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/reg_state" type="other">
+         <obj_property name="ElementShortName">reg_state</obj_property>
+         <obj_property name="ObjectShortName">reg_state</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/next_state" type="other">
+         <obj_property name="ElementShortName">next_state</obj_property>
+         <obj_property name="ObjectShortName">next_state</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/cnt2PC" type="array">
+         <obj_property name="ElementShortName">cnt2PC[6:0]</obj_property>
+         <obj_property name="ObjectShortName">cnt2PC[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/jumpToAddr" type="other">
+         <obj_property name="ElementShortName">jumpToAddr</obj_property>
+         <obj_property name="ObjectShortName">jumpToAddr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/jump" type="logic">
+         <obj_property name="ElementShortName">jump</obj_property>
+         <obj_property name="ObjectShortName">jump</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/readBUFF" type="logic">
+         <obj_property name="ElementShortName">readBUFF</obj_property>
+         <obj_property name="ObjectShortName">readBUFF</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/doneBTCDjump" type="logic">
+         <obj_property name="ElementShortName">doneBTCDjump</obj_property>
+         <obj_property name="ObjectShortName">doneBTCDjump</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/bytOutPC" type="array">
+         <obj_property name="ElementShortName">bytOutPC[7:0]</obj_property>
+         <obj_property name="ObjectShortName">bytOutPC[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/counterBout" type="array">
+         <obj_property name="ElementShortName">counterBout[7:0]</obj_property>
+         <obj_property name="ObjectShortName">counterBout[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/outBYTCD8" type="array">
+         <obj_property name="ElementShortName">outBYTCD8[7:0]</obj_property>
+         <obj_property name="ObjectShortName">outBYTCD8[7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group101" type="group">
+      <obj_property name="label">CNTA_B</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/enCntrA" type="logic">
+         <obj_property name="ElementShortName">enCntrA</obj_property>
+         <obj_property name="ObjectShortName">enCntrA</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/counterA" type="array">
+         <obj_property name="ElementShortName">counterA[7:0]</obj_property>
+         <obj_property name="ObjectShortName">counterA[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/counterA_next" type="array">
+         <obj_property name="ElementShortName">counterA_next[7:0]</obj_property>
+         <obj_property name="ObjectShortName">counterA_next[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/enCntrB" type="array">
+         <obj_property name="ElementShortName">enCntrB[1:0]</obj_property>
+         <obj_property name="ObjectShortName">enCntrB[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/counterB" type="array">
+         <obj_property name="ElementShortName">counterB[7:0]</obj_property>
+         <obj_property name="ObjectShortName">counterB[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/counterB_next" type="array">
+         <obj_property name="ElementShortName">counterB_next[7:0]</obj_property>
+         <obj_property name="ObjectShortName">counterB_next[7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group117" type="group">
+      <obj_property name="label">BCMRAM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/BCD_RAM/RAM[0]" type="array">
+         <obj_property name="ElementShortName">[0][0:1023]</obj_property>
+         <obj_property name="ObjectShortName">[0][0:1023]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/BCD_RAM/RAM[1]" type="array">
+         <obj_property name="ElementShortName">[1][0:1023]</obj_property>
+         <obj_property name="ObjectShortName">[1][0:1023]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/BCD_RAM/RAM[2]" type="array">
+         <obj_property name="ElementShortName">[2][0:1023]</obj_property>
+         <obj_property name="ObjectShortName">[2][0:1023]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/BCD_RAM/RAM[3]" type="array">
+         <obj_property name="ElementShortName">[3][0:1023]</obj_property>
+         <obj_property name="ObjectShortName">[3][0:1023]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/BCD_RAM/RAM[4]" type="array">
+         <obj_property name="ElementShortName">[4][0:1023]</obj_property>
+         <obj_property name="ObjectShortName">[4][0:1023]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/BCD_RAM/RAM[5]" type="array">
+         <obj_property name="ElementShortName">[5][0:1023]</obj_property>
+         <obj_property name="ObjectShortName">[5][0:1023]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/BCD_RAM/RAM[6]" type="array">
+         <obj_property name="ElementShortName">[6][0:1023]</obj_property>
+         <obj_property name="ObjectShortName">[6][0:1023]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/BCD_RAM/RAM[24]" type="array">
+         <obj_property name="ElementShortName">[24][0:1023]</obj_property>
+         <obj_property name="ObjectShortName">[24][0:1023]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/BCD_RAM/RAM[25]" type="array">
+         <obj_property name="ElementShortName">[25][0:1023]</obj_property>
+         <obj_property name="ObjectShortName">[25][0:1023]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/BCD_RAM/RAM[26]" type="array">
+         <obj_property name="ElementShortName">[26][0:1023]</obj_property>
+         <obj_property name="ObjectShortName">[26][0:1023]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/BCD_RAM/RAM[27]" type="array">
+         <obj_property name="ElementShortName">[27][0:1023]</obj_property>
+         <obj_property name="ObjectShortName">[27][0:1023]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/BCD_RAM/RAM[28]" type="array">
+         <obj_property name="ElementShortName">[28][0:1023]</obj_property>
+         <obj_property name="ObjectShortName">[28][0:1023]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/BCD_RAM/RAM[29]" type="array">
+         <obj_property name="ElementShortName">[29][0:1023]</obj_property>
+         <obj_property name="ObjectShortName">[29][0:1023]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/BCD_RAM/RAM[30]" type="array">
+         <obj_property name="ElementShortName">[30][0:1023]</obj_property>
+         <obj_property name="ObjectShortName">[30][0:1023]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/BCD_RAM/RAM[31]" type="array">
+         <obj_property name="ElementShortName">[31][0:1023]</obj_property>
+         <obj_property name="ObjectShortName">[31][0:1023]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/BCD_RAM/RAM[32]" type="array">
+         <obj_property name="ElementShortName">[32][0:1023]</obj_property>
+         <obj_property name="ObjectShortName">[32][0:1023]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/BCD_RAM/RAM[33]" type="array">
+         <obj_property name="ElementShortName">[33][0:1023]</obj_property>
+         <obj_property name="ObjectShortName">[33][0:1023]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/BCD_RAM/RAM[34]" type="array">
+         <obj_property name="ElementShortName">[34][0:1023]</obj_property>
+         <obj_property name="ObjectShortName">[34][0:1023]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/BCD_RAM/RAM[35]" type="array">
+         <obj_property name="ElementShortName">[35][0:1023]</obj_property>
+         <obj_property name="ObjectShortName">[35][0:1023]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/BCD_RAM/RAM[36]" type="array">
+         <obj_property name="ElementShortName">[36][0:1023]</obj_property>
+         <obj_property name="ObjectShortName">[36][0:1023]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/BCD_RAM/RAM[37]" type="array">
+         <obj_property name="ElementShortName">[37][0:1023]</obj_property>
+         <obj_property name="ObjectShortName">[37][0:1023]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/BCD_RAM/RAM[38]" type="array">
+         <obj_property name="ElementShortName">[38][0:1023]</obj_property>
+         <obj_property name="ObjectShortName">[38][0:1023]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/BCD_RAM/RAM[39]" type="array">
+         <obj_property name="ElementShortName">[39][0:1023]</obj_property>
+         <obj_property name="ObjectShortName">[39][0:1023]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/BCD_RAM/RAM[40]" type="array">
+         <obj_property name="ElementShortName">[40][0:1023]</obj_property>
+         <obj_property name="ObjectShortName">[40][0:1023]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_EVM_BLC/UUT/BYTECODE_STORE/BCD_RAM/RAM[41]" type="array">
+         <obj_property name="ElementShortName">[41][0:1023]</obj_property>
+         <obj_property name="ObjectShortName">[41][0:1023]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
