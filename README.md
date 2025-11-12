@@ -58,7 +58,7 @@ The repository follows a modular organization to promote readability, maintainab
 
 ```text
 📦 EVMx/
-├── docs/                # Documentation, figures, schematics, and reference papers
+├── docs/                # Documentation and reference papers
 ├── rtl/                 # VHDL source code (Register Transfer Level design)
 │   ├── BOOTH_MULT/          # Booth multiplier modules for modular arithmetic
 │   ├── BYTECODE_MEM/        # On-chip memory containing EVM bytecode
@@ -70,7 +70,7 @@ The repository follows a modular organization to promote readability, maintainab
 │   ├── STACK/               # Stack manager handling 256-bit operand operations
 │   └── STORAGE/             # Persistent contract storage and state handler
 │
-├── scripts/             # TCL and Python scripts for build automation (synthesis, implementation, sim)
+├── scripts/             # Python scripts for retreving block data and simulating Booth multiplication
 ├── sim/                 # Simulation outputs and waveform configurations (.wcfg)
 ├── tb/                  # Testbenches for module-level and system-level verification
 ├── LICENSE              # CERN-OHL-W-2.0 hardware license
