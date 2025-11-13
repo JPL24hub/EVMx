@@ -11,18 +11,11 @@ The architecture preserves Ethereum’s execution model while exploiting paralle
 
 ## 🧠 Overview
 
-EVMx provides a **synthesizable, cycle-accurate hardware version of the EVM interpreter**, tailored for FPGA environments such as Xilinx Zynq and UltraScale+ platforms.
-
-The design:
-- Implements Ethereum’s **stack-based execution model** natively in hardware  
-- Includes **hardware gas metering**, **Keccak-256 hashing**, and **256-bit arithmetic**  
-- Uses **parallel execution pipelines** to accelerate critical opcodes  
-- Achieves substantial speedups on **Zynq UltraScale+ ZCU104**
+EVMx provides a **synthesizable hardware version of the EVM interpreter**, tailored for FPGA environments such as Xilinx Zynq and UltraScale+ platforms.
 
 EVMx can be used for:
 - Smart contract acceleration  
 - Blockchain hardware research  
-- ZKP preprocessing pipelines  
 - Instruction-level analysis and profiling  
 
 ---
@@ -69,20 +62,20 @@ See the full text in [`LICENSE`](./LICENSE.txt).
 📦 EVMx/
 ├── constraints/                # Timing, pin, and implementation constraints
 ├── data/                       
-│   └── Block6653220_EVM/       # Input bytecode, transactions, and test vectors
+│   └── Block6653220_EVM/       # Example input bytecode for block 6653220
 ├── docs/                       # Documentation and reference papers
 ├── rtl/                        # Synthesizable VHDL source code
 │   └── EVMx/
-│       ├── ALU/                # 256-bit arithmetic and logic operations
+│       ├── ALU/                # The arithmetic and logic operations
 │       ├── GAS/                # Gas computation and metering logic
 │       ├── BYTECODE_MEM/       # Bytecode ROM for contract execution
 │       ├── DIV_NON_REST/       # Non-restoring division unit
 │       ├── BOOTH_MULT/         # Booth multipliers used for modular arithmetic
 │       ├── EXPO/               # Modular exponentiation (binary method)
 │       ├── KECCAK256/          # SHA3/Keccak-256 hashing core
-│       ├── MEMORY/             # Unified memory (stack, calldata, storage)
-│       ├── STACK/              # 256-bit stack manager
-│       └── STORAGE/            # Persistent contract storage and state handler
+│       ├── MEMORY/             # The memory core
+│       ├── STACK/              # The stack core
+│       └── STORAGE/            # The storage core
 ├── scripts/                    # TCL & Python automation (build, simulation)
 ├── sim/                        # Simulation outputs and waveform configurations (.wcfg)
 ├── tb/                         # Testbenches for verification
@@ -105,8 +98,7 @@ See the full text in [`LICENSE`](./LICENSE.txt).
 This script:
 - Creates a fresh Vivado project  
 - Imports all RTL and testbench sources  
-- Loads waveform configuration from `sim/`  
-- Runs the simulation until the `done` signal asserts  
+- Loads waveform configuration from `sim/`   
 
 ---
 
@@ -117,9 +109,3 @@ These files require valid paths for loading Ethereum block data:
 1. `Etherscan_Scraper.ipynb`  
 2. `TB_EVM_BLC.vhd`  
 3. `TB_EVM.vhd`  
-
-Ensure they point to:
-
-```
-./data/Block6653220_EVM/
-```
