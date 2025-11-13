@@ -17,7 +17,7 @@
 -- ENGINEER:    Poncha Lemayian
 -- REVISION:    1.0 - 26/09/2024 - File created.
 -- DESCRIPTION: The Binary exponential algorithm.
--- COMMENTS:    It handles a^0, a^1, 1^b, 0^b, 2^b.
+-- COMMENTS:    It handles a^0, a^1, 1^b, 0^b, 2^b. You need to utilize booth mult in the process
 --------------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;

@@ -12,7 +12,6 @@
 -- https://github.com/JPL24hub/EVMx
 --
 -- COPYRIGHT (C) 2025 Joel Poncha Lemayian
-
 ----------------------------------------------------------------------
 -- FILE:        ADD_SUB_CNTR.vhd
 -- ENGINEER:    Poncha Lemayian
@@ -58,9 +57,9 @@ begin
 
     with sel_cntr select
     counter_next <= counter when "00",
-    counter + 1 when "01",
-    diff when "10",
-    unsigned(data_in) when others;
+                counter + 1 when "01",
+                diff when "10",
+                unsigned(data_in) when others;
 
     -- Output
     data_out <= std_logic_vector(counter);

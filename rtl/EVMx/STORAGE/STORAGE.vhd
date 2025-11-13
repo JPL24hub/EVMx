@@ -12,7 +12,7 @@
 -- https://github.com/JPL24hub/EVMx
 --
 -- COPYRIGHT (C) 2025 Joel Poncha Lemayian
--------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 -- FILE:        STORAGE.vhd
 -- ENGINEER:    Poncha Lemayian
 -- REVISION:    1.0 - 08/01/2025 - File created.
@@ -25,7 +25,7 @@ use ieee.numeric_std.all;
 
 entity STORAGE is
     generic (
-        WIDTH_KEY    : integer := 10;  
+        WIDTH_KEY    : integer := 256;  
         STORAGE_DEPTH : integer := 1024; --2**31-1; -- Number of keys (Storage Slots)
         STORAGE_WIDTH : integer := 256  -- 256-bit wide values
     );
@@ -49,7 +49,7 @@ begin
     process (clk)
     begin
         if rising_edge(clk) then
-            if write_en = '0' then
+            if write_en = '1' then
                 RAM(to_integer(unsigned(key))) <= value;
             end if;
             value_out <= RAM(to_integer(unsigned(key)));

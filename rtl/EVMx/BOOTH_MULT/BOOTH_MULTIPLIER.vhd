@@ -16,7 +16,7 @@
 -- FILE:        BOOTH_MULTIPLIER.vhd
 -- ENGINEER:    Poncha Lemayian
 -- REVISION:    1.0 - 13/02/2025 - File created.
--- DESCRIPTION: Booth Multiplier implementation. It handles A=1 B=1, A=0 B=0, A=1 B=0, A=0 B=1.
+-- DESCRIPTION: Booth Multiplier implementation. It handles A=1, B=1, A=0, B=0, A=1, B=0, A=0, B=1.
 -- COMMENTS: Working as expected. I need to add division by 2^x
 --------------------------------------------------------------------------------------
 

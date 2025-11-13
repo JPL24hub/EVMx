@@ -12,7 +12,6 @@
 -- https://github.com/JPL24hub/EVMx
 --
 -- COPYRIGHT (C) 2025 Joel Poncha Lemayian
-
 ----------------------------------------------------------------------
 -- FILE:        MEMORY.vhd
 -- ENGINEER:    Poncha Lemayian
@@ -39,18 +38,16 @@ entity PROCESSORW is
         size      : in std_logic_vector(SIZE_COPY - 1 downto 0); 
         offDestOff: in std_logic_vector(WIDTH_MEMORY_ADDR-1 downto 0);
         cntr_out0 : in std_logic_vector(WIDTH_CNTR - 1 downto 0);
-        counter   : in integer;
-        mem_wrt   : out std_logic;
-        sel_cntr0 : out std_logic_vector(1 downto 0);
-        done_wt   : out std_logic;
-        rst_cntr  : out std_logic_vector(1 downto 0)
-
+        done_wt   : out std_logic
     );
 end entity;
 architecture rtl of PROCESSORW is
 
+    constant ONES  : unsigned(WIDTH_MEMORY_ADDR-1 downto 0) := (others => '1');
+
     type MEM_STATES is (IDLE, WRITE);
     signal reg_state, next_state : MEM_STATES := IDLE;
+    signal diff : unsigned(WIDTH_MEMORY_ADDR-1 downto 0) := (others => '0');
 
 begin
     FSM: process(clk) is
@@ -63,31 +60,22 @@ begin
                 end if;
             end if;
         end process;
+
+        diff <= unsigned(offDestOff) + unsigned(size) - 1;
     
-        PROCESSOR0: process(reg_state, start_wrt_mem, offDestOff, size, cntr_out0, counter) is
+        PROCESSOR0: process(reg_state, start_wrt_mem, offDestOff, size, cntr_out0, diff) is
         begin
-    
-            sel_cntr0   <= "00";
             done_wt     <= '0';
-            rst_cntr    <= "00"; -- Reset counter
-            mem_wrt     <= '0';
-    
             case reg_state is
                 when IDLE =>
                     if start_wrt_mem = '1' then -- If we are writing or reading mem
-                        sel_cntr0 <= "11";
-                        rst_cntr    <= "10"; -- Set to offset
                         next_state <= WRITE;
                     else
                         next_state <= IDLE;
                     end if;
                 when WRITE =>
-                    sel_cntr0   <= "01"; -- Increment counter
-                    rst_cntr    <= "01";
-                    mem_wrt     <= '1';
-                    if unsigned(cntr_out0) = (unsigned(offDestOff) + unsigned(size) - 1) OR counter = 31 then -- If we have written all the bytes. counter can only have 32 bytes
+                    if unsigned(cntr_out0) = diff OR unsigned(cntr_out0) > diff  OR  diff = ONES then -- If we have written all the bytes. counter can only have 32 bytes
                         done_wt    <= '1';
-                        rst_cntr   <= "00";
                         next_state <= IDLE;
                     else
                         next_state <= WRITE;

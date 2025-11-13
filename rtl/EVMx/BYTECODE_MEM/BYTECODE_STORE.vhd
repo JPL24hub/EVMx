@@ -39,8 +39,12 @@ entity BYTECODE_STORE is
         toBYTCD : in std_logic_vector(INPUT_WIDTH - 1 downto 0);
         pc : in std_logic_vector(WIDTH_PC - 1 downto 0);
         cnt2PC : in std_logic_vector(WIDTH_PC - 1 downto 0);
+        jumpToAddr : in integer;
+        jump : in std_logic;
         readBUFF : out std_logic;
+        doneBTCDjump : out std_logic;
         bytOutPC  : out std_logic_vector(OUPUT_WIDTH - 1 downto 0);
+        counterBout : out  unsigned(OUPUT_WIDTH - 1 downto 0);
         outBYTCD8 : out std_logic_vector(OUPUT_WIDTH - 1 downto 0)
     );
 end entity;
@@ -49,14 +53,17 @@ architecture rtl of BYTECODE_STORE is
     constant ARRD_WIDTH : natural := 8;
     constant BYTCD_LEN  : natural :=  1024;
 
-    signal we_RAM, en_BUFF, enCntrA, enCntrB : std_logic;
+    signal we_RAM, en_BUFF, enCntrA, enSaveB : std_logic;
+    signal enCntrB : std_logic_vector(1 downto 0);
     signal outRAM : std_logic_vector(BYTCD_LEN - 1 downto 0);
-    signal counterA, counterA_next, counterB, counterB_next : unsigned(ARRD_WIDTH - 1 downto 0);
+    signal counterA, counterA_next, counterB, counterB_next, saveCntrB, saveCntrB_next : unsigned(ARRD_WIDTH - 1 downto 0);
 
-    type STATES is (IDLE, LOAD_RAM, READ_BUFF, STATE_DONE);
+    type STATES is (IDLE, LOAD_RAM, READ_BUFF, JUMP_STATE, JUMP_STATE1, JUMP_STATE2, STATE_DONE);
     signal reg_state, next_state : STATES := IDLE;
 
 begin
+
+    counterBout <= counterB;
 
     -- BCD_RAM
     BCD_RAM : entity work.BCD_RAM(rtl)
@@ -98,24 +105,32 @@ begin
                     reg_state <= IDLE;
                     counterA <= (others=>'0');
                     counterB <= (others=>'0');
+                    saveCntrB <= (others=>'0');
                 else
                     reg_state <= next_state;
                     counterA <= counterA_next;
                     counterB <= counterB_next;
+                    saveCntrB <= saveCntrB_next;
                 end if;
             end if;
         end process;
-
+        saveCntrB_next <= counterB when enSaveB = '1' else saveCntrB;
         counterA_next <= counterA + 1 when enCntrA = '1' else counterA;
-        counterB_next <= counterB + 1 when enCntrB = '1' else counterB;
+        with enCntrB select
+        counterB_next <= counterB when "00",
+                    counterB + 1 when "01",
+                    to_unsigned(jumpToAddr, ARRD_WIDTH) when "10",
+                    saveCntrB when others;
 
-    process(reg_state, start, RAMloaded, counterB, ldNext, counterA) is
+    process(reg_state, start, RAMloaded, counterB, ldNext, counterA, jump, jumpToAddr) is
     begin
         enCntrA <= '0';
         en_BUFF <= '0';
-        enCntrB <= '0';
+        enCntrB <= "00";
         we_RAM <= '0';
         readBUFF <= '0';
+        enSaveB <= '0';
+        doneBTCDjump <= '0';
 
         case reg_state is
             when IDLE =>
@@ -133,7 +148,7 @@ begin
                     en_BUFF <= '1';
                     we_RAM <= '0';
                     enCntrA <= '0';
-                    enCntrB <= '1';
+                    enCntrB <= "01";
                     next_state <= READ_BUFF;
                 else
                     next_state <= LOAD_RAM;
@@ -144,11 +159,30 @@ begin
                     next_state <= STATE_DONE;
                 elsif ldNext = '1' then
                     en_BUFF <= '1';
-                    enCntrB <= '1';
+                    enCntrB <= "01";
                     next_state <= READ_BUFF;
+                elsif jump = '1' then
+                    if jumpToAddr > to_integer(counterB) then 
+                        enCntrB <= "10";
+                        enSaveB <= '1';
+                        next_state <= JUMP_STATE;
+                    else
+                        enCntrB <= "01";
+                        doneBTCDjump <= '1';
+                        next_state <= READ_BUFF;
+                    end if;
                 else
                     next_state <= READ_BUFF;
                 end if;
+            when JUMP_STATE => -- Read RAM
+                next_state <= JUMP_STATE1;
+            when JUMP_STATE1 => -- Push to BUFF
+                en_BUFF <= '1'; 
+                enCntrB <= "01";
+                next_state <= JUMP_STATE2;
+            when JUMP_STATE2 => 
+                doneBTCDjump <= '1';
+                next_state <= READ_BUFF;
             when STATE_DONE =>
                 next_state <= STATE_DONE;
             when others =>

@@ -1,7 +1,7 @@
 
 library IEEE;
 use IEEE.std_logic_1164.all;
-package pkg_keccak_types is
+package PKG_KECCAK is
 
 	--checksum 
 	
@@ -16,9 +16,9 @@ package pkg_keccak_types is
 	function getHashSize(t : sha3_type) return natural;
 
 
-end package pkg_keccak_types;
+end package PKG_KECCAK;
 
-package body pkg_keccak_types is
+package body PKG_KECCAK is
 
 
 	function getHashSize(t : sha3_type) return natural is
@@ -59,4 +59,4 @@ package body pkg_keccak_types is
 		return v;
 	end function to_std_logic_vector;
 
-end package body pkg_keccak_types;
+end package body PKG_KECCAK;

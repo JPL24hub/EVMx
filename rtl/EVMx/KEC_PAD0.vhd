@@ -1,3 +1,17 @@
+-- SPDX-License-Identifier: CERN-OHL-W-2.0
+--
+-- This source describes Open Hardware and is licensed under the CERN-OHL-W v2.
+-- 
+-- You may redistribute and modify this source and make products using it under
+-- the terms of the CERN-OHL-W v2 (Weakly Reciprocal).
+--
+-- You should have received a copy of the CERN-OHL-W v2 license with this source.
+-- If not, see: https://cern-ohl.web.cern.ch/
+--
+-- The Documentation and source code for this project are available at:
+-- https://github.com/JPL24hub/EVMx
+--
+-- COPYRIGHT (C) 2025 Joel Poncha Lemayian
 ----------------------------------------------------------------------
 -- FILE:        KEC_PAD.vhd
 -- ENGINEER:    Poncha Lemayian
@@ -16,7 +30,7 @@ use IEEE.numeric_std.all;
 entity KEC_PAD0 is
     generic(
         INPUT_WIDTH    : natural := 1024;
-        SIZE_WIDTH  : integer := 10;
+        SIZE_WIDTH  : integer := 8;
         PAD_WIDTH   : natural := 1600);
     port(
         pad_in  : in std_logic_vector(INPUT_WIDTH-1 downto 0);
@@ -40,15 +54,14 @@ begin
     process(invtInput, size)
         variable tempVec : std_logic_vector(PAD_MEG-1 downto 0);
         variable flip : std_logic_vector(INPUT_WIDTH-1 downto 0);
-        variable size_int : integer range 0 to INPUT_WIDTH;
+        variable size_int : integer range 0 to INPUT_WIDTH / 8;
     begin
 
         flip := (others => '0'); -- Initialize flip with 0s
 
         size_int := to_integer(unsigned(size)) * 8; -- Convert size to integer
         
-        flip(size_int - 1 downto 0) := invtInput(INPUT_WIDTH - 1 downto INPUT_WIDTH-size_int); -- Flip invtInput
-        report "flip2 : " & to_hstring(flip);
+        flip(size_int - 1 downto 0) := invtInput(INPUT_WIDTH - 1 downto INPUT_WIDTH - size_int); -- Flip invtInput
         
         tempVec := (others => '0'); -- Initialize t with all zeros
         tempVec(INPUT_WIDTH-1 downto 0) := flip; -- Assign pad_in to lower bits
@@ -58,7 +71,6 @@ begin
             tempVec(size_int) := '1'; -- Set t(size) to 1
         end if;
         
-        report "t: " & to_hstring(tempVec);
         pad_out <=  ZERO & x"8" & ZERO_A & tempVec; -- Assign t to output
     end process;
 end architecture;

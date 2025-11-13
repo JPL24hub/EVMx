@@ -2,7 +2,7 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
-use work.pkg_keccak_types.all;
+use work.PKG_KECCAK.all;
 use work.all;
 
 entity keccak_p is

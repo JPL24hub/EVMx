@@ -383,7 +383,7 @@ begin
                 --    end if;
                 when BRANCH =>
                     if brokeFlag = '0' then -- If gas is available
-                        report "" & to_hstring(outBYTCD8);
+                        --report "" & to_hstring(outBYTCD8);
                         selOpcode <= '1';
                         enTotGas <= '1';
                         case outBYTCD8 is

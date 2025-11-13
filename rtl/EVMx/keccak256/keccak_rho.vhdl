@@ -1,7 +1,7 @@
 
 library IEEE;
 use IEEE.std_logic_1164.all;
-use work.pkg_keccak_types.all;
+use work.PKG_KECCAK.all;
 
 entity keccak_rho is
 port(

@@ -12,7 +12,6 @@
 -- https://github.com/JPL24hub/EVMx
 --
 -- COPYRIGHT (C) 2025 Joel Poncha Lemayian
-
 ----------------------------------------------------------------------
 -- FILE:        MEMORY.vhd
 -- ENGINEER:    Poncha Lemayian
@@ -35,11 +34,10 @@ entity PROCESSORR is
     port(
         clk       : in std_logic;
         rst       : in std_logic;
-        mem_rd    : in std_logic;
+        start_rd_mem    : in std_logic;
         size      : in std_logic_vector(SIZE_COPY - 1 downto 0);
-        offDestOff: in std_logic_vector(WIDTH_MEMORY_ADDR-1 downto 0);  
+        rdOffset  : in std_logic_vector(WIDTH_MEMORY_ADDR - 1 downto 0);
         cntr_out1 : in std_logic_vector(WIDTH_CNTR - 1 downto 0);
-        sel_cntr1 : out std_logic_vector(1 downto 0);
         done_rd   : out std_logic
 
     );
@@ -65,23 +63,20 @@ begin
         end process;
     
 
-    PROCESSORR: process(reg_stateR, mem_rd, offDestOff, size, cntr_out1) is
+    PROCESSORR: process(reg_stateR, start_rd_mem, size, rdOffset, cntr_out1) is
         begin
-            sel_cntr1 <= "00";
             done_rd   <= '0';
 
             case reg_stateR is
                 when IDLER =>
-                    if mem_rd = '1' then
-                        sel_cntr1 <= "11";
+                    if start_rd_mem = '1' then
                         next_stateR <= READ;
                     else
                         next_stateR <= IDLER;
                     end if;
                 when READ =>
-                    sel_cntr1 <= "01"; -- Increment counter
     
-                    if unsigned(cntr_out1) = (unsigned(offDestOff) + unsigned(size))  then
+                    if unsigned(cntr_out1) =  unsigned(size) + unsigned(rdOffset) OR unsigned(cntr_out1) >  unsigned(size) + unsigned(rdOffset) then
                         done_rd    <= '1';
                         next_stateR <= IDLER;
                     else

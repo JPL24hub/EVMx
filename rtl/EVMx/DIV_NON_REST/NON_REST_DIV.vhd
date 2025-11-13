@@ -16,8 +16,8 @@
 -- FILE:        NON_REST_DIV.vhd
 -- ENGINEER:    Poncha Lemayian
 -- REVISION:    1.2 - 13/02/2025 - File created.
--- DESCRIPTION: Division module using DSP slices
--- COMMENTS:    Implementing a non-restoring division algorithm. Handles edge cases: a/1, a/0, a/a+1, a/a, 0/a .
+-- DESCRIPTION: 
+-- COMMENTS:    Implementing a restoring division algorithm. Handles edge cases.
 --------------------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;
@@ -139,7 +139,7 @@ begin
                             selQnt <= "10"; -- Quotient = dividend
                             ready <= '1';
                             next_state <= IDLE;
-                        elsif(unsigned(dividend) < unsigned(divisor) OR  unsigned(divisor) = 0 OR  unsigned(dividend) = 0) then
+                        elsif(unsigned(dividend) < unsigned(divisor) OR  unsigned(divisor) = 0) then
                             selRmr <= '1'; -- Remainder = 0
                             selQnt <= "01"; -- Quotient = 0
                             ready <= '1';
@@ -155,7 +155,7 @@ begin
                     when SHIFT => -- Shift left AQ
                         selA <= "10"; -- Shift A
                         selQ <= "001"; -- Shift Q
-                        if regA(WIDTH - 1) = '1' then
+                        if regA(WIDTH-1) = '1' then
                             next_state <= ADD_STATE;
                         else
                             op <= '0'; -- A = A + M

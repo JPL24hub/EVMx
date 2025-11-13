@@ -1,4 +1,3 @@
-
 -- SPDX-License-Identifier: CERN-OHL-W-2.0
 --
 -- This source describes Open Hardware and is licensed under the CERN-OHL-W v2.
@@ -38,10 +37,11 @@ entity STACK_EVM is
         we          : in  std_logic;   -- Only needed when pushing, should 0 when not writing
         push        : in  std_logic;   -- Push operation control input
         pop         : in  std_logic;   -- Pop operation control input
-        data_in     : in  std_logic_vector(WIDTH_STACK-1 downto 0); -- Input data to be pushed
+        data_in     : in  std_logic_vector(WIDTH_STACK - 1 downto 0); -- Input data to be pushed
         wrt         : in  std_logic; -- Write STACK at a particular address
-        addr_offset : in  std_logic_vector(DUP_OFFSET-1 downto 0);
-        data_out    : out std_logic_vector(WIDTH_STACK-1 downto 0) := (others=>'0') -- Output data popped from the stack
+        addr_offset : in  std_logic_vector(DUP_OFFSET - 1 downto 0);
+        top_stack   : out std_logic_vector(DUP_OFFSET - 1 downto 0);   -- Top of stack
+        data_out    : out std_logic_vector(WIDTH_STACK - 1 downto 0) := (others=>'0') -- Output data popped from the stack
     );
 end entity;
 
@@ -65,10 +65,14 @@ begin
         end if;
     end process;
 
+    -- Next empty location
+    top_stack <= std_logic_vector(pointer_next);
+
     cntl_stack <= push & pop;
 
     PROC_CNTRL: process(cntl_stack, pointer, pointer_next) is
     begin
+        pointer_next <= pointer; -- Assign current pointer as default
         case cntl_stack is
             when "10" => -- push
                 if pointer < DEPTH_STACK then
@@ -90,7 +94,7 @@ begin
         case cntl_pntr is
             when "10" => -- pop
                 sig_addr <= pointer_next;
-            when "01" => -- pop
+            when "01" => -- wrt to offset
                 sig_addr <= unsigned(addr_offset);
             when others =>
                 sig_addr <= pointer;

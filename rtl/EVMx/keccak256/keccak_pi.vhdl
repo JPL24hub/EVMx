@@ -1,6 +1,6 @@
 
 library IEEE;
-use work.pkg_keccak_types.all;
+use work.PKG_KECCAK.all;
 
 entity keccak_pi is
 port(

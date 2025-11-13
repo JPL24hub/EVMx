@@ -12,6 +12,13 @@
 -- https://github.com/JPL24hub/EVMx
 --
 -- COPYRIGHT (C) 2025 Joel Poncha Lemayian
+----------------------------------------------------------------------
+-- FILE:        COUNTER_PC.vhd
+-- ENGINEER:    Poncha Lemayian
+-- REVISION:    1.0 - 19/01/2025- File created.
+-- DESCRIPTION: Conter for EVM PC.
+-- COMMENTS:    
+--------------------------------------------------------------------------------------
 
 library IEEE;
 use IEEE.std_logic_1164.all;
