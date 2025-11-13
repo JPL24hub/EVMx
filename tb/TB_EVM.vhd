@@ -80,7 +80,7 @@ architecture sim of TB_EVM is
     signal total_Gas : std_logic_vector(GAS_WIDTH - 1 downto 0);
     signal done_sim     : boolean := false;
 
-    constant in_data_file : string := "C:\Users\AR43170\Desktop\PhD_desktop\PHD_Codes\Gitlab\poncha\vhdl\1_PhD\EVM\EVM\OneFile\0x448a5065aeBB8E423F0896E6c5D525C040f59af3.txt";
+    constant in_data_file : string := "path_to_bytecode\0x448a5065aeBB8E423F0896E6c5D525C040f59af3.txt";
 
 begin
 
