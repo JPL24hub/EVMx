@@ -80,8 +80,10 @@ The repository follows a modular organization to promote readability, maintainab
 ├── tb/                  # Testbenches for module-level and system-level verification
 ├── LICENSE              # CERN-OHL-W-2.0 hardware license
 └── README.md            # Project overview and documentation
+```
 
-## 🧩 How to Run
+## ⚙️ How to Run
+
 ```text
 📦 Quick Start
 ├── 1. Clone the repository
