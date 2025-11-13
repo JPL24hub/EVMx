@@ -47,7 +47,7 @@ architecture rtl of TB_BYTCD is
     signal outBYTCD8 : std_logic_vector(OUPUT_WIDTH - 1 downto 0);
     signal doneSim  : boolean := false;
 
-    constant in_data_file : string := "C:\Users\AR43170\Desktop\PhD_desktop\PHD_Codes\Gitlab\poncha\vhdl\1_PhD\EVM\BYTCODE_NEW\0x0ABeFb7611Cb3A01EA3FaD85f33C3C934F8e2cF4.txt";
+    constant in_data_file : string := "path_contract_bytecode\BYTCODE_NEW\0x0ABeFb7611Cb3A01EA3FaD85f33C3C934F8e2cF4.txt";
 
 begin
 

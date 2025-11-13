@@ -84,41 +84,22 @@ architecture sim of TB_EVM_BLC is
     signal startDivO  : std_logic;
     signal readyDivO  : std_logic;
     signal quoDivO    : std_logic_vector(WIDTH_256-1 downto 0);
-    --=========================== Desktop ============================================================
-    constant in_data_file   : string := "C:\Users\AR43170\Desktop\PhD_desktop\PHD_Codes\Gitlab\poncha\vhdl\1_PhD\EVM\ETH_BLOCKS\Block6653186_EVM\file_list.txt"; -- Adjust path
-    constant callData_file  : string := "C:\Users\AR43170\Desktop\PhD_desktop\PHD_Codes\Gitlab\poncha\vhdl\1_PhD\EVM\ETH_BLOCKS\Block6653186_EVM\inputData.txt";
-    --constant in_data_file   : string := "C:\Users\AR43170\Desktop\PhD_desktop\PHD_Codes\Gitlab\poncha\vhdl\1_PhD\EVM\ETH_BLOCKS\Block6653197_EVM\file_list.txt";
-    --constant callData_file  : string := "C:\Users\AR43170\Desktop\PhD_desktop\PHD_Codes\Gitlab\poncha\vhdl\1_PhD\EVM\ETH_BLOCKS\Block6653197_EVM\inputData.txt";
-    --constant in_data_file   : string := "C:\Users\AR43170\Desktop\PhD_desktop\PHD_Codes\Gitlab\poncha\vhdl\1_PhD\EVM\ETH_BLOCKS\Block6653232_EVM\file_list.txt";
-    --constant callData_file  : string := "C:\Users\AR43170\Desktop\PhD_desktop\PHD_Codes\Gitlab\poncha\vhdl\1_PhD\EVM\ETH_BLOCKS\Block6653232_EVM\inputData.txt";
-    --constant in_data_file   : string := "C:\Users\AR43170\Desktop\PhD_desktop\PHD_Codes\Gitlab\poncha\vhdl\1_PhD\EVM\ETH_BLOCKS\Block6653208_EVM\file_list.txt";
-    --constant callData_file  : string := "C:\Users\AR43170\Desktop\PhD_desktop\PHD_Codes\Gitlab\poncha\vhdl\1_PhD\EVM\ETH_BLOCKS\Block6653208_EVM\inputData.txt";
-    --constant in_data_file   : string := "C:\Users\AR43170\Desktop\PhD_desktop\PHD_Codes\Gitlab\poncha\vhdl\1_PhD\EVM\ETH_BLOCKS\Block6653220_EVM\file_list.txt";
-    --constant callData_file  : string := "C:\Users\AR43170\Desktop\PhD_desktop\PHD_Codes\Gitlab\poncha\vhdl\1_PhD\EVM\ETH_BLOCKS\Block6653220_EVM\inputData.txt";
-    --constant in_data_file   : string := "C:\Users\AR43170\Desktop\PhD_desktop\PHD_Codes\Gitlab\poncha\vhdl\1_PhD\EVM\ETH_BLOCKS\Block6653205_EVM\file_list.txt";
-    --constant callData_file  : string := "C:\Users\AR43170\Desktop\PhD_desktop\PHD_Codes\Gitlab\poncha\vhdl\1_PhD\EVM\ETH_BLOCKS\Block6653205_EVM\inputData.txt";
-    --constant in_data_file   : string := "C:\Users\AR43170\Desktop\PhD_desktop\PHD_Codes\Gitlab\poncha\vhdl\1_PhD\EVM\ETH_BLOCKS\Block6653209_EVM\file_list.txt";
-    --constant callData_file  : string := "C:\Users\AR43170\Desktop\PhD_desktop\PHD_Codes\Gitlab\poncha\vhdl\1_PhD\EVM\ETH_BLOCKS\Block6653209_EVM\inputData.txt";
-   
-    --file div_log_file : text open write_mode is "C:\Users\AR43170\Desktop\PhD_desktop\PHD_Codes\Gitlab\poncha\vhdl\1_PhD\EVM\EVM\division_log.txt";
     
     --==============================Laptop==========================================================================================
-    --constant in_data_file   : string := "C:\Users\ponch\Desktop\myPhDCodes\GitLab\poncha\vhdl\1_PhD\EVM\ETH_BLOCKS\Block6653186_EVM\file_list.txt";
-    --constant callData_file  : string := "C:\Users\ponch\Desktop\myPhDCodes\GitLab\poncha\vhdl\1_PhD\EVM\ETH_BLOCKS\Block6653186_EVM\inputData.txt";
-    --constant in_data_file   : string := "C:\Users\ponch\Desktop\myPhDCodes\GitLab\poncha\vhdl\1_PhD\EVM\ETH_BLOCKS\Block6653197_EVM\file_list.txt";
-    --constant callData_file  : string := "C:\Users\ponch\Desktop\myPhDCodes\GitLab\poncha\vhdl\1_PhD\EVM\ETH_BLOCKS\Block6653197_EVM\inputData.txt";
-    --constant in_data_file   : string := "C:\Users\ponch\Desktop\myPhDCodes\GitLab\poncha\vhdl\1_PhD\EVM\ETH_BLOCKS\Block6653232_EVM\file_list.txt";
-    --constant callData_file  : string := "C:\Users\ponch\Desktop\myPhDCodes\GitLab\poncha\vhdl\1_PhD\EVM\ETH_BLOCKS\Block6653232_EVM\inputData.txt";
-    --constant in_data_file   : string := "C:\Users\ponch\Desktop\myPhDCodes\GitLab\poncha\vhdl\1_PhD\EVM\ETH_BLOCKS\Block6653208_EVM\file_list.txt";
-    --constant callData_file  : string := "C:\Users\ponch\Desktop\myPhDCodes\GitLab\poncha\vhdl\1_PhD\EVM\ETH_BLOCKS\Block6653208_EVM\inputData.txt";
-    --constant in_data_file   : string := "C:\PhDcodes\poncha\vhdl\1_PhD\EVM\ETH_BLOCKS\Block6653220_EVM\file_list.txt";
-    --constant callData_file  : string := "C:\PhDcodes\poncha\vhdl\1_PhD\EVM\ETH_BLOCKS\Block6653220_EVM\inputData.txt";
-    --constant in_data_file   : string := "C:\Users\ponch\Desktop\myPhDCodes\GitLab\poncha\vhdl\1_PhD\EVM\ETH_BLOCKS\Block6653205_EVM\file_list.txt";
-    --constant callData_file  : string := "C:\Users\ponch\Desktop\myPhDCodes\GitLab\poncha\vhdl\1_PhD\EVM\ETH_BLOCKS\Block6653205_EVM\inputData.txt";
-    --constant in_data_file   : string := "C:\Users\ponch\Desktop\myPhDCodes\GitLab\poncha\vhdl\1_PhD\EVM\ETH_BLOCKS\Block6653209_EVM\file_list.txt";
-    --constant callData_file  : string := "C:\Users\ponch\Desktop\myPhDCodes\GitLab\poncha\vhdl\1_PhD\EVM\ETH_BLOCKS\Block6653209_EVM\inputData.txt";
-    
-    --file div_log_file : text open write_mode is "C:\Users\ponch\Desktop\myPhDCodes\GitLab\poncha\vhdl\1_PhD\EVM\EVM\division_log.txt";
+    constant in_data_file   : string := "path_to_blockfolder\Block6653186_EVM\file_list.txt";
+    constant callData_file  : string := "path_to_blockfolder\Block6653186_EVM\inputData.txt";
+    --constant in_data_file   : string := "path_to_blockfolder\Block6653197_EVM\file_list.txt";
+    --constant callData_file  : string := "path_to_blockfolder\Block6653197_EVM\inputData.txt";
+    --constant in_data_file   : string := "path_to_blockfolder\Block6653232_EVM\file_list.txt";
+    --constant callData_file  : string := "path_to_blockfolder\Block6653232_EVM\inputData.txt";
+    --constant in_data_file   : string := "path_to_blockfolder\Block6653208_EVM\file_list.txt";
+    --constant callData_file  : string := "path_to_blockfolder\Block6653208_EVM\inputData.txt";
+    --constant in_data_file   : string := "path_to_blockfolder\Block6653220_EVM\file_list.txt";
+    --constant callData_file  : string := "path_to_blockfolder\Block6653220_EVM\inputData.txt";
+    --constant in_data_file   : string := "path_to_blockfolder\Block6653205_EVM\file_list.txt";
+    --constant callData_file  : string := "path_to_blockfolder\Block6653205_EVM\inputData.txt";
+    --constant in_data_file   : string := "path_to_blockfolder\Block6653209_EVM\file_list.txt";
+    --constant callData_file  : string := "path_to_blockfolder\Block6653209_EVM\inputData.txt";
     --================================================================================================================================================
 
     begin
@@ -129,9 +110,7 @@ architecture sim of TB_EVM_BLC is
         file calDat_file : text open read_mode is callData_file; -- Master file containing file names
         variable file_name_line : line;
         variable calDatLine : line;
-        --variable file_name : string(1 to 108);  -- Laptop
-        variable file_name : string(1 to 150);  -- Desktop
-        
+        variable file_name : string(1 to 108);  -- Laptop. You may need to adjust to match the width of your path        
         file file1 : text;  -- Declare the input file dynamically
         variable line_in_file : line;
         variable BYTCD : std_logic_vector(BYTCD_LEN-1 downto 0) := (others => '0');
@@ -198,38 +177,6 @@ architecture sim of TB_EVM_BLC is
         wait for 2 * clk_prd;
         wait;
     end process;
-
---==================Writing to a file================================
-    --log_process: process(clk)
-    --    variable log_line : line;
-    --    variable written_inputs : boolean := false;
-    --    variable written_output : boolean := false;
-    --begin
-    --    if rising_edge(clk) then
-    --        if startDivO = '1' and not written_inputs then
-    --            write(log_line, string'("numDiv = "));
-    --            hwrite(log_line, numDivO);
-    --            write(log_line, string'(" | denDiv = "));
-    --            hwrite(log_line, denDivO);
-    --            writeline(div_log_file, log_line);
-    --            written_inputs := true;
-    --        end if;
-    --        
-    --        if readyDivO = '1' and not written_output then
-    --            write(log_line, string'("quoDiv = "));
-    --            hwrite(log_line, quoDivO);
-    --            writeline(div_log_file, log_line);
-    --            written_output := true;
-    --            
-    --            -- Optional reset logic
-    --            written_inputs := false;
-    --            written_output := false;
-    --        end if;
-    --    end if;
-    --end process;
---=============================================
-
-
     UUT : entity work.EVM(rtl)
     generic map(
         WIDTH_256 => WIDTH_256,
@@ -293,11 +240,3 @@ architecture sim of TB_EVM_BLC is
     clk <= not clk after clk_prd / 2 when done_sim = false else '0';
 
 end architecture;
---
--- 6653186 - 114,531,000 ns
--- 6653197 - 76,660,000 ns
--- 6653232 - 37,204,000 ns
--- 6653208 - 57,393,000 ns
--- 6653220 - 8,862,000 ns
--- 6653205 - 10,407,000 ns
--- 6653209 - 79,875,000 ns

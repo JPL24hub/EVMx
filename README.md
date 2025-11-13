@@ -58,19 +58,24 @@ The repository follows a modular organization to promote readability, maintainab
 
 ```text
 📦 EVMx/
-├── docs/                # Documentation and reference papers
-├── rtl/                 # VHDL source code (Register Transfer Level design)
-│   ├── BOOTH_MULT/          # Booth multiplier modules for modular arithmetic
-│   ├── BYTECODE_MEM/        # On-chip memory containing EVM bytecode
-│   ├── DIVNONREST/          # Non-restoring division implementation
-│   ├── EVMx/                # Core EVMx architecture (control unit, datapath, opcode unit)
-│   ├── Expo_Binary_Booth/   # Modular exponentiation using binary Booth algorithm
-│   ├── keccak256/           # Keccak-256 (SHA3) hashing engine
-│   ├── MEMORY/              # Unified memory module for stack, calldata, and storage access
-│   ├── STACK/               # Stack manager handling 256-bit operand operations
-│   └── STORAGE/             # Persistent contract storage and state handler
+├── constraints/  # Timing, pin, and implementation constraints
+├── data/               
+│    ├── Block6653220_EVM   # Input test vectors, bytecode traces, block data
+├── docs/                   # Documentation and reference papers
+├── rtl/                    # VHDL source code (Register Transfer Level design)
+│   ├── EVMx/                   # Core EVMx architecture (control unit, datapath, opcode unit)
+│       ├── ALU/                # Arithmetic–logic unit (ADD, SUB, MUL, DIV, MOD, etc.)
+│       ├── GAS/                # Gas computation, metering, and control logic
+│       ├── BYTECODE_MEM/       # On-chip memory containing EVM bytecode
+│       ├── DIV_NON_REST/       # Non-restoring division implementation
+│       ├── BOOTH_MULT/         # Booth multiplier modules for modular arithmetic
+│       ├── EXPO/   # Modular exponentiation using binary Booth algorithm
+│       ├── KECCAK256/           # Keccak-256 (SHA3) hashing engine
+│       ├── MEMORY/              # Unified memory module for stack, calldata, and storage access
+│       ├── STACK/               # Stack manager handling 256-bit operand operations
+│       └── STORAGE/             # Persistent contract storage and state handler
 │
-├── scripts/             # Python scripts for retreving block data and simulating Booth multiplication
+├── scripts/             # TCL, Python automation: simulation, project creation, runs
 ├── sim/                 # Simulation outputs and waveform configurations (.wcfg)
 ├── tb/                  # Testbenches for module-level and system-level verification
 ├── LICENSE              # CERN-OHL-W-2.0 hardware license
