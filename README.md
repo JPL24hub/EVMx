@@ -56,6 +56,13 @@ See the full license in the [`LICENSE`](./LICENSE.txt) file.
 
 The repository follows a modular organization to promote readability, maintainability, and independent verification of each hardware component.
 
+## 📦 Quick Start
+├── 1. Clone the repository
+├── 2. 
+├── 3. 
+├── 4. 
+└── 5. 
+
 ```text
 📦 EVMx/
 ├── constraints/  # Timing, pin, and implementation constraints
