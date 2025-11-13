@@ -56,13 +56,6 @@ See the full license in the [`LICENSE`](./LICENSE.txt) file.
 
 The repository follows a modular organization to promote readability, maintainability, and independent verification of each hardware component.
 
-## 📦 Quick Start
-├── 1. Clone the repository
-├── 2. 
-├── 3. 
-├── 4. 
-└── 5. 
-
 ```text
 📦 EVMx/
 ├── constraints/  # Timing, pin, and implementation constraints
@@ -87,3 +80,12 @@ The repository follows a modular organization to promote readability, maintainab
 ├── tb/                  # Testbenches for module-level and system-level verification
 ├── LICENSE              # CERN-OHL-W-2.0 hardware license
 └── README.md            # Project overview and documentation
+
+## 🧩 How to Run
+```text
+📦 Quick Start
+├── 1. Clone the repository
+├── 2. 
+├── 3. 
+├── 4. 
+└── 5. 
