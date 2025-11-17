@@ -54,6 +54,9 @@ If you distribute modified hardware, you must also release the source under the 
 
 See the full text in [`LICENSE`](./LICENSE.txt).
 
+### 🔑 Keccak Code
+
+The Keccak-256 implementation is provided by its original designers and released under CC0 (public domain).
 ---
 
 ## 🧩 Repository Structure
