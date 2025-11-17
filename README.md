@@ -96,7 +96,9 @@ The Keccak-256 implementation is provided by its original designers and released
 ├── 1. Clone the repository
 ├── 2. Open Vivado 2024.2 (or newer)
 ├── 3. In the TCL console: cd path_to/EVMx/scripts
-└── 4. Run: source evmx.tcl
+├── 4. Run: source evmx.tcl
+└── 5. Edit the data path variables in the files listed under the 
+       [Notes on Data Paths](#notes-on-data-paths) section
 ```
 
 This script:
