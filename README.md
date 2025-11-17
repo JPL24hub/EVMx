@@ -108,7 +108,7 @@ This script:
 
 ---
 
-## ⚙️ Notes on Data Paths
+## Notes on Data Paths
 
 These files require valid paths for loading Ethereum block data:
 
