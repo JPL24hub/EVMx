@@ -56,7 +56,7 @@ See the full text in [`LICENSE`](./LICENSE.txt).
 
 ### 🔑 Keccak Code
 
-The Keccak-256 implementation is provided by its original designers and released under CC0 (public domain).
+The Keccak-256 implementation is provided by its original designers and released under **CC0 (public domain)**:  <https://creativecommons.org/publicdomain/zero/1.0/>
 
 ---
 
