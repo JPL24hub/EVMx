@@ -115,11 +115,3 @@ These files require valid paths for loading Ethereum block data:
 1. `Etherscan_Scraper.ipynb`  
 2. `TB_EVM_BLC.vhd`  
 3. `TB_EVM.vhd`  
-
----
-
-## Author
-
-**Joel Poncha Lemayian**  
-PhD, Electrical Engineering  
-FPGA-Based Blockchain Security and Cryptographic Hardware
